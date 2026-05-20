@@ -5,8 +5,8 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 60000,
   // Use Playwright defaults for test and expect timeouts; avoid overriding here
-  fullyParallel: false,
-  workers: 1,
+  fullyParallel: true,
+  workers: 5,
   retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
@@ -27,6 +27,14 @@ module.exports = defineConfig({
       use: {
         browserName: 'chromium',
       }
-    }
+     }
+// ,
+    // {
+    //   name: 'firefox',
+    //   use: { 
+    //     browserName: 'firefox',
+    //   },
+    // }
+    
   ]
 });
