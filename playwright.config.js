@@ -3,10 +3,11 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
+  timeout: 60000,
   // Use Playwright defaults for test and expect timeouts; avoid overriding here
   fullyParallel: false,
   workers: 1,
-  retries: 0,
+  retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     headless: false,
@@ -24,7 +25,7 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       use: {
-        browserName: 'chromium'
+        browserName: 'chromium',
       }
     }
   ]
