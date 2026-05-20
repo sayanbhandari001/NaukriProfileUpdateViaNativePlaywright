@@ -5,8 +5,8 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 60000,
   // Use Playwright defaults for test and expect timeouts; avoid overriding here
-  fullyParallel: true,
-  workers: 5,
+  fullyParallel: false,
+  workers: 1,
   retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
