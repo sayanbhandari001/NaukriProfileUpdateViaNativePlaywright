@@ -48,6 +48,10 @@ async function updateGulfHeadline(page) {
   await page.locator('button:has-text("Save")').click();
   const toastTitle = page.locator('h4', { hasText: 'Profile updated successfully' });
   await expect(toastTitle).toBeVisible();
+  await page.locator('//span[@class="profile-name"]').first().click();
+  await page.locator('//p[@id="logoutLink"]').first().click({state: 'visible'});
+  const toastlogoutTitle = page.locator('h4', { hasText: 'You have successfully logged out' });
+  await expect(toastlogoutTitle).toBeVisible();
 }
 
 test(gulfAccount.label, async ({ page }) => {
