@@ -61,9 +61,22 @@ async function updateHeadline(page, targetText, alternateText) {
     await textarea.fill(targetText);
   }
   await page.locator('form[name="resumeHeadlineForm"] button[type="submit"]', { hasText: 'Save' }).click();
-  await page.waitForLoadState();
+  await page.locator('div').filter({ hasText: /^Profile updated successfully$/ }).first().waitFor({ state: 'visible' });
   await expect(page).toHaveURL('https://www.naukri.com/mnjuser/profile?id=&altresid');
 }
+
+async function logoutFromNaukri(page) {
+  const profileupdateClose = page.locator('//div[@class="lightbox profileEditDrawer profileUpdatedProLayer model_open flipOpen"]//div//span[contains(text(),"CrossLayer")]');
+  if (profileupdateClose.isVisible({ state: 'visible' })) {
+    await profileupdateClose.click();
+  } else {
+    await page.getByRole('img', { name: 'naukri user profile img' }).isVisible({ state: 'visible' });
+    await expect(page.getByRole('img', { name: 'naukri user profile img' })).toBeVisible();
+  }
+  await page.locator('div').filter({ hasText: /^2$/ }).nth(1).click();
+  await page.getByText('Logout').first().click();
+}
+
 
 for (const account of accounts) {
   test(account.label, async ({ page }) => {
@@ -72,6 +85,7 @@ for (const account of accounts) {
     await loginToNaukri(page, email, decodeBase64(passwordBase64));
     await openHeadlineEditor(page);
     await updateHeadline(page, expectedHeadline, alternateHeadline);
+    await logoutFromNaukri(page);
   });
 }
 
@@ -81,4 +95,5 @@ test(wifeAccount.label, async ({ page }) => {
   await loginToNaukri(page, email, decodeBase64(passwordBase64));
   await openHeadlineEditor(page);
   await updateHeadline(page, wifeHeadline, alternateWifeHeadline);
+  await logoutFromNaukri(page);
 });
