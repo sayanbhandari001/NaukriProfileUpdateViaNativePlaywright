@@ -5,3 +5,9 @@
 .npm/
 .env
 .env.local
+
+# Playwright
+node_modules/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
