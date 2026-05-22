@@ -9,7 +9,9 @@
     "install:drivers": "npx playwright install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.46.0",
-    "dotenv": "^16.3.1"
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "dotenv": "^16.3.1",
+    "mcp-server": "^0.0.9"
   }
 }
