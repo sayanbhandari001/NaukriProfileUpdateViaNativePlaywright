@@ -13,7 +13,7 @@ module.exports = defineConfig({
     headless: false,
     ignoreHTTPSErrors: true,
     // Rely on Playwright's default action/navigation timeouts for robustness
-    viewport: { width: 1280, height: 800 },
+    viewport: { width: 1360, height: 768 },
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     launchOptions: {
       args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']
