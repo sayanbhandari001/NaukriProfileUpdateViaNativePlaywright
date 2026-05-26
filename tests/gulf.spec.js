@@ -19,4 +19,3 @@ test.describe('@priority-1 Gulf Accounts', () => {
   );
   await gulfApp.logout();
 });
-
