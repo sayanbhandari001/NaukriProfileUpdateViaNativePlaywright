@@ -7,15 +7,17 @@ const gulfAccount = {
   expectedHeadline: '8 Years Experienced Senior QA Automation Tester, Selenium, Java, Playwright',
   priority: 1,
 };
+
 test.describe('@priority-1 Gulf Accounts', () => {
   test(`[Priority ${gulfAccount.priority}] ${gulfAccount.label}`, async ({ gulfApp }) => {
     const email = requireEnvValue(gulfAccount.emailKey);
-  const passwordBase64 = requireEnvValue(gulfAccount.passwordKey);
-  await gulfApp.login(email, decodeBase64(passwordBase64));
-  await gulfApp.profilePage.gotoEditor();
-  await gulfApp.profilePage.updateHeadline(
-    gulfAccount.expectedHeadline,
-    `${gulfAccount.expectedHeadline}.`
-  );
-  await gulfApp.logout();
+    const passwordBase64 = requireEnvValue(gulfAccount.passwordKey);
+    await gulfApp.login(email, decodeBase64(passwordBase64));
+    await gulfApp.profilePage.gotoEditor();
+    await gulfApp.profilePage.updateHeadline(
+      gulfAccount.expectedHeadline,
+      `${gulfAccount.expectedHeadline}.`
+    );
+    await gulfApp.logout();
+  });
 });
