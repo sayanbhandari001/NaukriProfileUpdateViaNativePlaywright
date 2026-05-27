@@ -49,7 +49,7 @@ jobs:
           NAUKRI_USER_3_PASSWORD: ${{ secrets.NAUKRI_USER_3_PASSWORD }}
           NAUKRI_WIFE_EMAIL: ${{ secrets.NAUKRI_WIFE_EMAIL }}
           NAUKRI_WIFE_PASSWORD: ${{ secrets.NAUKRI_WIFE_PASSWORD }}
-        run: npx playwright test --headless
+        run: npx playwright test
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
