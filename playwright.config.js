@@ -10,7 +10,7 @@ module.exports = defineConfig({
   retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
-    headless: false,
+    headless: process.env.CI ? true : false,  // Headless in CI, headed locally
     ignoreHTTPSErrors: true,
     // Rely on Playwright's default action/navigation timeouts for robustness
     viewport: { width: 1360, height: 768 },
