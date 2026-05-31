@@ -1,0 +1,471 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic:   
+    - generic [ref=e3]:
+      - generic [ref=e5]: 
+      - generic [ref=e7] [cursor=pointer]: 
+  - generic [ref=e8]:
+    - banner [ref=e9]:
+      - text: 
+      - generic [ref=e10]:
+        - generic [ref=e11] [cursor=pointer]: 
+        - img "downloadIcon" [ref=e13]
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: Discover a brighter future with foundit.
+          - button " Download app" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]: 
+            - paragraph [ref=e18]: Download app
+        - text:  
+      - link "foundit header logo" [ref=e25] [cursor=pointer]:
+        - /url: /
+        - img "foundit logo" [ref=e26]
+      - generic [ref=e27]:
+        - generic: 
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - img "foundit" [ref=e35] [cursor=pointer]
+            - generic [ref=e37]:
+              - link "Jobs" [ref=e40] [cursor=pointer]:
+                - /url: /srp/results?query=""&quickApplyJobs=true
+              - link "Career Solutions" [ref=e43] [cursor=pointer]:
+                - /url: /career-services/boost
+              - link "Prep" [ref=e46] [cursor=pointer]:
+                - /url: /career-services/prep
+              - link "Career Advice" [ref=e49] [cursor=pointer]:
+                - /url: /career-advice
+          - generic [ref=e51]:
+            - button "Login" [active] [ref=e52] [cursor=pointer]:
+              - img [ref=e53]
+              - text: Login
+            - button "Register" [ref=e55] [cursor=pointer]:
+              - img [ref=e56]
+              - text: Register
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - text: ꡩ
+          - generic [ref=e64]:
+            - generic [ref=e65]: ꡷
+            - textbox "autocompete" [ref=e68]:
+              - /placeholder: Skills, Company or Job Title
+            - generic [ref=e69] [cursor=pointer]: ꡱ
+          - generic [ref=e71]:
+            - generic [ref=e72]: ꡲ
+            - textbox "autocompete" [ref=e75]:
+              - /placeholder: Location
+          - generic [ref=e77]:
+            - generic [ref=e78]: ꡰ
+            - generic [ref=e82]: Experience
+          - button "Search" [ref=e84] [cursor=pointer]
+        - link "Advanced Search" [ref=e86] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - paragraph [ref=e90]:
+        - text: Find the job that is
+        - text: perfect for You
+      - generic [ref=e91]:
+        - generic [ref=e93] [cursor=pointer]: Register Now
+        - generic [ref=e94] [cursor=pointer]:
+          - generic [ref=e96]: ꡈ
+          - generic [ref=e97]: Upload Resume
+      - generic:   
+    - generic [ref=e98]:
+      - generic [ref=e102]:
+        - heading "Employers of Choice" [level=2] [ref=e103]
+        - generic [ref=e106]:
+          - list [ref=e108]:
+            - listitem [ref=e109] [cursor=pointer]:
+              - link "Avanade Asia Pte Ltd jobs" [ref=e110]:
+                - /url: /company/avanade/index.html
+                - img "Avanade Asia Pte Ltd jobs" [ref=e111]
+          - list [ref=e113]:
+            - listitem [ref=e114] [cursor=pointer]:
+              - link "Emerson Asia Pacific Private Limited jobs" [ref=e115]:
+                - /url: /search/xemersonsgx-jobs?query=xemersonsgx&queryDerived=true
+                - img "Emerson Asia Pacific Private Limited jobs" [ref=e116]
+          - list [ref=e118]:
+            - listitem [ref=e119] [cursor=pointer]:
+              - link "ITCAN Pte Limited jobs" [ref=e120]:
+                - /url: /search/xitcaninx-jobs?query=xitcaninx&queryDerived=true
+                - img "ITCAN Pte Limited jobs" [ref=e121]
+      - iframe [ref=e127]:
+        - link [ref=f5e2] [cursor=pointer]:
+          - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjstsbU4Ai6XpaGEtwt92DpU10B0hXs6HYCKMzGbVNDSaawp78VWZI7fs-vM_ojOOAsqFA676yhzqfNeGQdCXteP1AEuEE4-q434dIJnEZlzokY2SfSKUEhRdUNer8EBe3Fd5dvS7sg19JblEP-bYbHwW_QLrNVMWpuNDyn7fm5Ysw4PtcCg0BSWj2xtTBRmI1xKujV--cGsuNMsOPmTzzfuF5J9-3UYPRmQrVCy-wmIa129T-lddvV8jyISir_euT_RWXtsnOdKhEQYpUdDA6xcG4BMi58KfehLYQfsoY9iIwIF3l_z_2A5iItJmv1dZ9kCAOZbao46KlcHJ1UIDR6ZwYk8k2vLwzqn79hdH7deEk7QZ0-MbqaMXVmiGON4skf_rK1BxnJBk2BdBLIyCWWV3x_Ki5OoFZk9hnVs&sai=AMfl-YQHw91Dhpe17Oi1wrjNmh6knJkTzmJB4eaJFKxmV5c3g9UTQ7BEtXb8lZDtLGcWDNxuBKlOupoSa_ak8StX-3EfHpsz1Rnsg5WacGYvQ-pesb0CCC2oj5kUaGZNRAIW0uUz51l3oNbfb93wuh42T9QUa7Eyf_Fy9BqXIUcNpRdzXS6nRk7I98Ipq3qwSmrP8kgMhG5AcyOOgq9-KTDLJEgDPeuTbXHQAPnTv1AOJwOJVDJSGf97c8jOSiJUhS1iuVTb5JIH9k0U1Df49P32I47AbFDu_hOi6YtGULmtpqsO59N2DWCJsMChXO7Mv-05w1XG8lCqP3N3xQ1O5fibJHarz5YAdwhlYCmie0vgs42FUuT4WINgSDe-tu7n_hyNG6mjKINSEplbrw&sig=Cg0ArKJSzEcP8HL-FsaQ&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.linkedin.com/company/foundit-jobs/%3Fspl%3DIN_non-paid_social_brand_social_Linkedin___%26utm_source%3DLinkedin%26utm_medium%3Dsocial%26utm_campaign%3DIN_non-paid_social_brand_social_Linkedin___
+      - generic [ref=e128]:
+        - text: Popular Searches
+        - generic [ref=e129]:
+          - link "Java" [ref=e132] [cursor=pointer]:
+            - /url: /search/java-jobs
+          - link "Engineer" [ref=e135] [cursor=pointer]:
+            - /url: /search/engineer-jobs
+          - link "IT" [ref=e138] [cursor=pointer]:
+            - /url: /search/it-jobs
+          - link "Software engineer" [ref=e141] [cursor=pointer]:
+            - /url: /search/software-engineer-jobs
+          - link "Personal assistant" [ref=e144] [cursor=pointer]:
+            - /url: /search/personal-assistant-jobs
+          - link "Business Analyst" [ref=e147] [cursor=pointer]:
+            - /url: /search/business-analyst-jobs
+          - link "Admin" [ref=e150] [cursor=pointer]:
+            - /url: /search/admin-jobs
+          - link "Cyber security" [ref=e153] [cursor=pointer]:
+            - /url: /search/cyber-security-jobs
+          - link "Accounting" [ref=e156] [cursor=pointer]:
+            - /url: /search/accounting-jobs
+          - link "Computers/IT/Software" [ref=e159] [cursor=pointer]:
+            - /url: /search/computers/it/software-jobs
+          - link "HR" [ref=e162] [cursor=pointer]:
+            - /url: /search/hr-jobs
+          - link "Customer service" [ref=e165] [cursor=pointer]:
+            - /url: /search/customer-service-jobs
+          - link "Sales" [ref=e168] [cursor=pointer]:
+            - /url: /search/sales-jobs
+          - link "Testing" [ref=e171] [cursor=pointer]:
+            - /url: /search/testing-jobs
+          - link "Project management" [ref=e174] [cursor=pointer]:
+            - /url: /search/project-management-jobs
+      - generic [ref=e176]:
+        - link "Beware of scammers Beware of Scammers We don’t charge any money for job offers" [ref=e178] [cursor=pointer]:
+          - /url: /info/besafe
+          - generic [ref=e179]:
+            - img "Beware of scammers" [ref=e181]
+            - generic [ref=e182]:
+              - generic [ref=e183]: Beware of Scammers
+              - generic [ref=e184]: We don’t charge any money for job offers
+        - generic:
+          - link:
+            - /url: /zuno/
+        - generic [ref=e187] [cursor=pointer]:
+          - img "mobile" [ref=e189]
+          - generic [ref=e190]:
+            - generic [ref=e191]: Search better with foundit App
+            - generic [ref=e192]:
+              - link "playstore" [ref=e194]:
+                - /url: https://play.google.com/store/apps/details?id=com.monsterindia.seeker.views&referrer=utm_source%3DWebsite%26utm_campaign%3DJobs-App
+                - img "playstore" [ref=e195]
+              - link "appstore" [ref=e197]:
+                - /url: https://apps.apple.com/in/app/monster-jobs/id525775161
+                - img "appstore" [ref=e198]
+        - link "search Give Your Job Hunt A Boost Try out foundit Career Services" [ref=e200] [cursor=pointer]:
+          - /url: /career-services
+          - generic [ref=e201]:
+            - img "search" [ref=e203]
+            - generic [ref=e204]:
+              - generic [ref=e205]: Give Your Job Hunt A Boost
+              - generic [ref=e206]: Try out foundit Career Services
+        - generic [ref=e209] [cursor=pointer]:
+          - img "job alert" [ref=e211]
+          - generic [ref=e212]:
+            - generic [ref=e213]: Create Job Alerts
+            - generic [ref=e214]: Get Emails on New Jobs
+    - contentinfo [ref=e215]:
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e220] [cursor=pointer]:
+              - paragraph [ref=e221]: Non IT Jobs
+              - generic [ref=e222]: ꢇ
+            - list [ref=e223]:
+              - listitem [ref=e224]:
+                - link "Accounting" [ref=e225] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/accounting-jobs
+              - listitem [ref=e226]:
+                - link "HR" [ref=e227] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/hr-jobs
+              - listitem [ref=e228]:
+                - link "Sales" [ref=e229] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/sales-jobs
+              - listitem [ref=e230]:
+                - link "Electrical Engineering" [ref=e231] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/electrical-engineering-jobs
+              - listitem [ref=e232]:
+                - link "Civil Engineering" [ref=e233] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/civil-engineering-jobs
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e234]:
+            - generic [ref=e235] [cursor=pointer]:
+              - paragraph [ref=e236]: IT Jobs
+              - generic [ref=e237]: ꢇ
+            - list [ref=e238]:
+              - listitem [ref=e239]:
+                - link "Java" [ref=e240] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/java-jobs
+              - listitem [ref=e241]:
+                - link "IT Security" [ref=e242] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/it-security-jobs
+              - listitem [ref=e243]:
+                - link "CSS" [ref=e244] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/css-jobs
+              - listitem [ref=e245]:
+                - link "SQL" [ref=e246] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/sql-jobs
+              - listitem [ref=e247]:
+                - link "Linux" [ref=e248] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/linux-jobs
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e249]:
+            - generic [ref=e250] [cursor=pointer]:
+              - paragraph [ref=e251]: Job Categories
+              - generic [ref=e252]: ꢇ
+            - list [ref=e253]:
+              - listitem [ref=e254]:
+                - link "Jobs By Skill" [ref=e255] [cursor=pointer]:
+                  - /url: /search/jobs-by-skill
+              - listitem [ref=e256]:
+                - link "Jobs By Function" [ref=e257] [cursor=pointer]:
+                  - /url: /search/jobs-by-function
+              - listitem [ref=e258]:
+                - link "Jobs By Industry" [ref=e259] [cursor=pointer]:
+                  - /url: /search/jobs-by-industry
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e260]:
+            - generic [ref=e261] [cursor=pointer]:
+              - paragraph [ref=e262]: Job Seekers
+              - generic [ref=e263]: ꢇ
+            - list [ref=e264]:
+              - listitem [ref=e265]:
+                - link "Job Seekers Login" [ref=e266] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/rio/login
+              - listitem [ref=e267]:
+                - link "Upload Resume" [ref=e268] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/seeker/registration
+              - listitem [ref=e269]:
+                - link "Search Tips" [ref=e270] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/search-tips
+              - listitem [ref=e271]:
+                - link "Find Companies" [ref=e272] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/search/jobs-by-company
+              - listitem [ref=e273]:
+                - link "Help" [ref=e274] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/help
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e275]:
+            - generic [ref=e276] [cursor=pointer]:
+              - paragraph [ref=e277]: Employers
+              - generic [ref=e278]: ꢇ
+            - list [ref=e279]:
+              - listitem [ref=e280]:
+                - link "Employer Login" [ref=e281] [cursor=pointer]:
+                  - /url: https://recruiter.foundit.sg/?login=yes
+              - listitem [ref=e282]:
+                - link "Job Posting" [ref=e283] [cursor=pointer]:
+                  - /url: https://recruiter.foundit.sg/job-posting-services.html
+              - listitem [ref=e284]:
+                - link "Access Resume Database" [ref=e285] [cursor=pointer]:
+                  - /url: http://recruiter.foundit.sg/v2/ecom/index.html
+              - listitem [ref=e286]:
+                - link "Join mRecruiters" [ref=e287] [cursor=pointer]:
+                  - /url: http://recruiter.foundit.sg/v2/recruiter-sign-up.html
+              - listitem [ref=e288]:
+                - link "Buy Online" [ref=e289] [cursor=pointer]:
+                  - /url: http://recruiter.foundit.sg/v2/ecom/index.html
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e290]:
+            - generic [ref=e291] [cursor=pointer]:
+              - paragraph [ref=e292]: Company Info
+              - generic [ref=e293]: ꢇ
+            - list [ref=e294]:
+              - listitem [ref=e295]:
+                - link "About Us" [ref=e296] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/about-us
+              - listitem [ref=e297]:
+                - link "Contact Us" [ref=e298] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/contact-us
+              - listitem [ref=e299]:
+                - link "Send Feedback" [ref=e300] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/feedback
+              - listitem [ref=e301]:
+                - link "HTML Sitemap" [ref=e302] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/info/sitemap
+              - listitem [ref=e303]:
+                - link "XML Sitemap" [ref=e304] [cursor=pointer]:
+                  - /url: https://www.foundit.sg/xmlsitemap/sitemap-index.xml
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+          - generic [ref=e305]:
+            - generic [ref=e306] [cursor=pointer]:
+              - paragraph [ref=e307]: Career Tips
+              - generic [ref=e308]: ꢇ
+            - generic:
+              - list
+          - generic:
+            - generic:
+              - list
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - generic [ref=e311]: Selected Country
+            - combobox "country switch dropdown" [ref=e312]:
+              - option "India"
+              - option "Gulf"
+              - option "Hong kong"
+              - option "Singapore" [selected]
+              - option "Philippines"
+              - option "Thailand"
+              - option "Malaysia"
+              - option "Indonesia"
+              - option "Vietnam"
+          - generic [ref=e314]:
+            - generic [ref=e315]: ꠸
+            - paragraph [ref=e316]:
+              - link "info@foundit.sg" [ref=e317] [cursor=pointer]:
+                - /url: mailto:info@foundit.sg
+          - generic [ref=e319]:
+            - generic [ref=e320]: ꠷
+            - generic [ref=e321]:
+              - paragraph [ref=e322]:
+                - 'link "Toll No: +65 6359 2864" [ref=e323] [cursor=pointer]':
+                  - /url: tel:+65 6359 2864
+              - paragraph [ref=e324]:
+                - 'link "Toll Free No: 800-101-2339" [ref=e325] [cursor=pointer]':
+                  - /url: tel:800-101-2339
+          - generic [ref=e326]:
+            - generic [ref=e327]: ꡕ
+            - paragraph [ref=e328]: Download The App
+            - generic [ref=e329]:
+              - link "Best Jobs Apps for Android" [ref=e330] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.monsterindia.seeker.views&referrer=utm_source%3DWebsite%26utm_campaign%3DJobs-App
+                - img "Best Jobs Apps for Android" [ref=e331]
+              - link "Best Jobs Apps for iOS" [ref=e332] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/monster-jobs/id525775161
+                - img "Best Jobs Apps for iOS" [ref=e333]
+          - generic [ref=e334]:
+            - paragraph [ref=e335]: Stay Connected
+            - generic [ref=e336]:
+              - link "" [ref=e337] [cursor=pointer]:
+                - /url: https://www.facebook.com/founditSG/
+                - generic [ref=e338]: 
+              - link "" [ref=e339] [cursor=pointer]:
+                - /url: https://twitter.com/foundit_SG
+                - generic [ref=e340]: 
+              - link:
+                - /url: https://www.linkedin.com/company/foundit-jobs/
+              - link "ꡃ" [ref=e341] [cursor=pointer]:
+                - /url: https://www.youtube.com/@foundit_Singapore/featured
+                - generic [ref=e342]: ꡃ
+          - generic [ref=e343]:
+            - paragraph [ref=e344]:
+              - link "Security & Fraud" [ref=e345] [cursor=pointer]:
+                - /url: https://www.foundit.sg/info/security-center
+              - link "Privacy Policy" [ref=e346] [cursor=pointer]:
+                - /url: https://www.foundit.sg/info/privacy
+              - link "Terms of Use" [ref=e347] [cursor=pointer]:
+                - /url: https://www.foundit.sg/info/terms-of-use
+              - link "Be Safe" [ref=e348] [cursor=pointer]:
+                - /url: https://www.foundit.sg/info/besafe
+              - link "Complaints" [ref=e349] [cursor=pointer]:
+                - /url: https://www.foundit.sg/info/complaints
+            - paragraph [ref=e350]: © 2026 foundit | All rights Reserved
+  - iframe [ref=e353]:
+    - generic [ref=f6e6]:
+      - text: protected by
+      - strong [ref=f6e7]: reCAPTCHA

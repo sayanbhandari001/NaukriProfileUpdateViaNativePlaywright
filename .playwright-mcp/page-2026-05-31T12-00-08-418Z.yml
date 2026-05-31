@@ -1,0 +1,723 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e3]:
+      - text: 
+      - listitem [ref=e4]:
+        - link "Bayt.com" [ref=e5] [cursor=pointer]:
+          - /url: https://www.bayt.com/
+          - img "Bayt.com" [ref=e6]
+      - listitem [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Dashboard" [ref=e10] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/myworkspace-j/
+          - listitem [ref=e11] [cursor=pointer]:
+            - generic [ref=e12]:
+              - text: Find Jobs
+              - generic [ref=e13]: 
+          - listitem [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]:
+              - text: My Profile
+              - generic [ref=e16]: 
+          - listitem [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]:
+              - text: Resources
+              - generic [ref=e19]: 
+          - listitem [ref=e20]:
+            - link "Premium" [ref=e21] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/premium/
+          - text: 
+          - listitem
+          - text: 
+          - listitem [ref=e22]:
+            - list [ref=e23]:
+              - text:  
+              - listitem [ref=e24]:
+                - generic "What’s New" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]: 
+                - text: 
+              - listitem [ref=e28]:
+                - generic "Messages" [ref=e30] [cursor=pointer]:
+                  - generic [ref=e31]: 
+                - text:  Nothing available
+              - listitem [ref=e32]:
+                - generic "Notifications" [ref=e34] [cursor=pointer]:
+                  - generic [ref=e35]: 
+                  - generic [ref=e36]: 9+
+                - text:  Nothing up to now!
+              - listitem [ref=e37]:
+                - generic "Account" [ref=e39] [cursor=pointer]:
+                  - generic [ref=e40]: 
+                - text:     
+              - listitem [ref=e41]:
+                - generic "Apps" [ref=e42] [cursor=pointer]:
+                  - generic "More on Bayt.com" [ref=e43]:
+                    - generic [ref=e44]: 
+                - text:     
+          - text: 
+  - generic [ref=e45]:
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - textbox "keyword" [ref=e52]:
+          - /placeholder: Search jobs, skills, companies
+        - generic [ref=e53]: 
+      - generic [ref=e55]:
+        - combobox "select country" [ref=e56]:
+          - option "Select location" [disabled]
+          - option "All locations" [selected]
+          - option "Algeria"
+          - option "Bahrain"
+          - option "Bahrain · Manama"
+          - option "Egypt"
+          - option "Egypt · Alexandria"
+          - option "Egypt · Cairo"
+          - option "India"
+          - option "Iraq"
+          - option "Iraq · Baghdad"
+          - option "Jordan"
+          - option "Jordan · Amman"
+          - option "Kuwait"
+          - option "Kuwait · Al Kuwait"
+          - option "Lebanon"
+          - option "Lebanon · Beirut"
+          - option "Libya"
+          - option "Morocco"
+          - option "Morocco · Casablanca"
+          - option "Oman"
+          - option "Oman · Muscat"
+          - option "Pakistan"
+          - option "Qatar"
+          - option "Qatar · Doha"
+          - option "Saudi Arabia"
+          - option "Saudi Arabia · Dammam"
+          - option "Saudi Arabia · Eastern Province"
+          - option "Saudi Arabia · Jeddah"
+          - option "Saudi Arabia · Jubail"
+          - option "Saudi Arabia · Khobar"
+          - option "Saudi Arabia · Mecca"
+          - option "Saudi Arabia · Medina"
+          - option "Saudi Arabia · Riyadh"
+          - option "Syria"
+          - option "Tunisia"
+          - option "Tunisia · Tunis"
+          - option "United Arab Emirates"
+          - option "United Arab Emirates · Abu Dhabi"
+          - option "United Arab Emirates · Ajman"
+          - option "United Arab Emirates · Al Ain"
+          - option "United Arab Emirates · Dubai"
+          - option "United Arab Emirates · Fujairah"
+          - option "United Arab Emirates · Ras Al Khaimah"
+          - option "United Arab Emirates · Sharjah"
+          - option "Yemen"
+        - generic [ref=e57]: 
+      - button "Find jobs" [ref=e59] [cursor=pointer]:  Find jobs
+    - generic [ref=e60]:
+      - complementary [ref=e61]:
+        - generic [ref=e66]:
+          - heading "Improve your profile" [level=4] [ref=e68]
+          - generic [ref=e69]:
+            - progressbar [ref=e71]
+            - generic [ref=e72]:
+              - link "List your training and certifications +1" [ref=e74] [cursor=pointer]:
+                - /url: javascript:;
+              - link "Attach your original CV +2" [ref=e76] [cursor=pointer]:
+                - /url: javascript:;
+              - link "Receive a recommendation +4" [ref=e78] [cursor=pointer]:
+                - /url: javascript:;
+              - link "View more" [ref=e79] [cursor=pointer]:
+                - /url: "#viewMoreRecords"
+            - separator [ref=e80]
+            - link "Upgrade your account" [ref=e84] [cursor=pointer]:
+              - /url: /en/premium/?native_source=cv-builder
+            - separator [ref=e85]
+            - paragraph [ref=e87]: "CV reference number: CV55404413"
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - link "" [ref=e91] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e92]: 
+            - text:    
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e96] [cursor=pointer]:
+                - button "" [ref=e97]
+                - text: 
+              - generic [ref=e98]:
+                - heading "Sayan Bhandari " [level=1] [ref=e99]:
+                  - text: Sayan
+                  - generic [ref=e100]:
+                    - text: Bhandari
+                    - generic [ref=e102]: 
+                - generic [ref=e103]: Software Development Engineer in test
+                - generic [ref=e104]: mastercard
+                - generic [ref=e105]:
+                  - generic [ref=e106]:
+                    - term [ref=e107]: Location
+                    - definition [ref=e108]: Mumbai, India
+                  - generic [ref=e109]:
+                    - term [ref=e110]: Education
+                    - definition [ref=e111]: Bachelor's degree, Computer Science
+                  - generic [ref=e112]:
+                    - term [ref=e113]: Experience
+                    - definition [ref=e114]: 8 years, 3 months
+                - generic [ref=e115] [cursor=pointer]:
+                  - text: View profile as
+                  - generic [ref=e116]: 
+            - text:   
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - link "" [ref=e119] [cursor=pointer]:
+              - /url: javascript:;
+            - heading "Contact information" [level=4] [ref=e120]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - term [ref=e124]: Email address
+              - definition [ref=e125]: sayanbhandari007@gmail.com
+            - generic [ref=e126]:
+              - term [ref=e127]: Mobile number
+              - definition [ref=e128]:
+                - text: +91-8806822007
+                - generic [ref=e129]:
+                  - text: Confirmed
+                  - generic [ref=e130]: 
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - link "" [ref=e133] [cursor=pointer]:
+              - /url: javascript:;
+            - heading "Target job" [level=4] [ref=e134]
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - term [ref=e138]: Target job title
+              - definition [ref=e139]: Software Testing Analyst, Software Test Engineer, Software Testing Team Leader, Automation Engineering Adviser, Software Test Lead, Test Designer
+            - generic [ref=e140]:
+              - term [ref=e141]: Target job location
+              - definition [ref=e142]: United Arab Emirates, No Visa
+            - generic [ref=e143]:
+              - term [ref=e144]:
+                - text: Career level
+                - link "" [ref=e146] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e147]: 
+              - definition [ref=e148]: Mid career
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - link "" [ref=e151] [cursor=pointer]:
+              - /url: javascript:;
+            - heading "Personal information" [level=4] [ref=e152]
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - term [ref=e156]: First name
+              - definition [ref=e157]: Sayan
+            - generic [ref=e158]:
+              - term [ref=e159]: Last name
+              - definition [ref=e160]: Bhandari
+            - generic [ref=e161]:
+              - term [ref=e162]: Birth date
+              - definition [ref=e163]: "11 Apr 1995 (Age: 31)"
+            - generic [ref=e164]:
+              - term [ref=e165]: Nationality
+              - definition [ref=e166]: India
+            - generic [ref=e167]:
+              - term [ref=e168]: Residence location
+              - definition [ref=e169]: India - Mumbai
+            - generic [ref=e170]:
+              - term [ref=e171]: Gender
+              - definition [ref=e172]: Male
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - heading "CV attachment" [level=4] [ref=e176]
+              - link " Upload" [ref=e178] [cursor=pointer]:
+                - /url: javascript:;
+                - generic [ref=e179]: 
+                - text: Upload
+            - paragraph [ref=e180]: A CV attachment gives employers a quick snapshot of your experience
+          - generic [ref=e182]:
+            - img "Upload attachment" [ref=e183]
+            - paragraph [ref=e184]: Attach your CV to complete your profile and get noticed by more employers
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - link " Add" [ref=e187] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e188]: 
+              - generic [ref=e189]: Add
+            - heading "Work experience" [level=4] [ref=e190]
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - generic [ref=e193]: You have added
+              - text: 8 year(s), 3 month(s)
+              - generic [ref=e194]: of work experience to your Bayt.com CV.
+            - generic [ref=e196]:
+              - img [ref=e197]
+              - list [ref=e199]:
+                - listitem [ref=e200]:
+                  - heading "2x more interviews. One smart update." [level=6] [ref=e201]
+                - listitem [ref=e202]:
+                  - paragraph [ref=e203]: Get noticed faster. Let AI enhance your experience descriptions to match your target job, quickly and easily.
+                - listitem [ref=e204]:
+                  - link "Tailor with Bayt AI" [ref=e205] [cursor=pointer]:
+                    - /url: javascript:;
+            - generic [ref=e206]:
+              - generic [ref=e208]:
+                - generic [ref=e209]:
+                  - generic [ref=e210]:
+                    - link "Edit salary" [ref=e211] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "" [ref=e212] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "" [ref=e213] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                  - heading "Software Development Engineer in test at mastercard" [level=6] [ref=e214]
+                - generic [ref=e215]:
+                  - list [ref=e216]:
+                    - listitem [ref=e217]: Pune, India
+                    - listitem [ref=e218]: My current job since Nov 2023
+                  - paragraph [ref=e220]:
+                    - text: • Owned SDLC/STLC across 12+ Agile sprints, covering test planning, execution, defect management, and release sign-off.• Performed manual functional, regression, integration, and E2E testing ac ...
+                    - link "See more" [ref=e221] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                  - generic [ref=e223]: "Last monthly salary: INR 250000"
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - generic [ref=e227]:
+                    - link "" [ref=e228] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "" [ref=e229] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                  - heading "Senior QA Analyst at Accenture - India" [level=6] [ref=e230]
+                - generic [ref=e231]:
+                  - list [ref=e232]:
+                    - listitem [ref=e233]: Mumbai, India
+                    - listitem [ref=e234]: Aug 2021 to Oct 2023
+                  - paragraph [ref=e236]:
+                    - text: Created 9 test plans for 3 projects.• Conducted complete Manual and automation testing using BDD framework with cucumberusing gherkin language and Test NG with Maven for 3 projects.• Planned 6 KT acti ...
+                    - link "See more" [ref=e237] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                  - generic [ref=e239]: "Last monthly salary: INR 980000"
+              - text:    
+            - link "View all " [ref=e240] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - text: View all
+              - generic [ref=e241]: 
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - link " Add" [ref=e244] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e245]: 
+              - generic [ref=e246]: Add
+            - heading "Education" [level=4] [ref=e247]
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - link "" [ref=e253] [cursor=pointer]:
+                - /url: javascript:;
+              - link "" [ref=e254] [cursor=pointer]:
+                - /url: javascript:;
+              - heading "Bachelor's degree, Computer Science" [level=6] [ref=e255]
+            - generic [ref=e256]:
+              - list [ref=e257]:
+                - listitem [ref=e258]: at University Of Mumbai
+                - listitem [ref=e259]: India
+                - listitem [ref=e260]: Aug 2018
+              - paragraph [ref=e262]: Mumbai university
+              - link "View degree " [ref=e264] [cursor=pointer]:
+                - /url: "#"
+                - text: View degree
+                - generic [ref=e265]: 
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - link " Add" [ref=e268] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e269]: 
+              - generic [ref=e270]: Add
+            - heading "Training and certifications" [level=4] [ref=e271]
+          - generic [ref=e272]:
+            - heading "Certifications" [level=6] [ref=e273]
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - link "" [ref=e278] [cursor=pointer]:
+                  - /url: javascript:;
+                - link "" [ref=e279] [cursor=pointer]:
+                  - /url: javascript:;
+                - heading "ISTQB, Certified Tester Foundation Level" [level=6] [ref=e280]
+              - generic [ref=e281]:
+                - generic [ref=e282]: Jan 2019 - No expiry
+                - link "View Certificate" [ref=e283] [cursor=pointer]:
+                  - /url: "#"
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - link " Add" [ref=e286] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e287]: 
+              - generic [ref=e288]: Add
+            - heading "Skills" [level=4] [ref=e289]
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - link "" [ref=e295] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e296] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "INSURANCE" [level=6] [ref=e297]
+                - paragraph [ref=e299]: "Level: Expert"
+              - generic [ref=e301]:
+                - generic [ref=e302]:
+                  - link "" [ref=e303] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e304] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "API" [level=6] [ref=e305]
+                - paragraph [ref=e307]: "Level: Expert"
+              - generic [ref=e309]:
+                - generic [ref=e310]:
+                  - link "" [ref=e311] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e312] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "AUTOMATION" [level=6] [ref=e313]
+                - paragraph [ref=e315]: "Level: Expert"
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - link "" [ref=e319] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e320] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "C" [level=6] [ref=e321]
+                - paragraph [ref=e323]: "Level: Expert"
+              - text:        
+            - link "View all " [ref=e324] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - text: View all
+              - generic [ref=e325]: 
+        - generic [ref=e326]:
+          - generic [ref=e327]:
+            - link " Add" [ref=e328] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e329]: 
+              - generic [ref=e330]: Add
+            - heading "Languages" [level=4] [ref=e331]
+          - generic [ref=e332]:
+            - generic [ref=e333]:
+              - generic [ref=e335]:
+                - generic [ref=e336]:
+                  - link "" [ref=e337] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e338] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "English" [level=6] [ref=e339]
+                - paragraph [ref=e341]: Expert
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - link "" [ref=e345] [cursor=pointer]:
+                    - /url: javascript:;
+                  - link "" [ref=e346] [cursor=pointer]:
+                    - /url: javascript:;
+                  - heading "Hindi" [level=6] [ref=e347]
+                - paragraph [ref=e349]: Expert
+              - text:  
+            - link "View all " [ref=e350] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - text: View all
+              - generic [ref=e351]: 
+        - generic [ref=e353]:
+          - link " Add" [ref=e354] [cursor=pointer]:
+            - /url: javascript:;
+            - generic [ref=e355]: 
+            - generic [ref=e356]: Add
+          - heading "References" [level=4] [ref=e357]
+        - generic [ref=e359]:
+          - link " Add" [ref=e360] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - generic [ref=e361]: 
+            - generic [ref=e362]: Add
+          - heading "Memberships" [level=4] [ref=e363]
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - link " Add" [ref=e366] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e367]: 
+              - generic [ref=e368]: Add
+            - heading "Recommendations" [level=4] [ref=e369]
+          - generic [ref=e371]:
+            - list [ref=e372]:
+              - listitem [ref=e373]:
+                - link "Received" [ref=e374] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e375]:
+                - link "Given" [ref=e376] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e377]:
+                - link "Pending" [ref=e378] [cursor=pointer]:
+                  - /url: javascript:void(0)
+            - generic [ref=e381]:
+              - generic [ref=e382]: 
+              - paragraph [ref=e383]: Build your credibility by showcasing recommendations from colleagues or managers. Ask them to share their insights and highlight your strengths and contributions.
+            - text:  
+        - generic [ref=e384]:
+          - heading "Social profiles" [level=4] [ref=e386]
+          - generic [ref=e387]: Your social and professional profiles will show how you present yourself to everyone, and especially your future employer.
+          - link "Add links" [ref=e389] [cursor=pointer]:
+            - /url: javascript:;
+        - generic [ref=e390]:
+          - generic [ref=e391]:
+            - link " Add" [ref=e392] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e393]: 
+              - generic [ref=e394]: Add
+            - heading "Hobbies and interests" [level=4] [ref=e395]
+          - generic [ref=e400]:
+            - link "" [ref=e401] [cursor=pointer]:
+              - /url: javascript:;
+            - link "" [ref=e402] [cursor=pointer]:
+              - /url: javascript:;
+            - heading "Badminton" [level=6] [ref=e403]
+        - generic [ref=e405]:
+          - link " Add" [ref=e406] [cursor=pointer]:
+            - /url: javascript:;
+            - generic [ref=e407]: 
+            - generic [ref=e408]: Add
+          - heading "Video CV" [level=4] [ref=e409]
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - link " Add" [ref=e412] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e413]: 
+              - generic [ref=e414]: Add
+            - heading "Disability disclosure" [level=4] [ref=e415]
+          - generic [ref=e416]:
+            - img "Disability Image" [ref=e418]
+            - paragraph [ref=e419]:
+              - text: Sharing your disability status is entirely optional and
+              - text: won’t impact your applications.
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - link " Add" [ref=e422] [cursor=pointer]:
+              - /url: /en/courses/learning-search/?keyword=*&get_all_test=1
+              - generic [ref=e423]: 
+              - generic [ref=e424]: Add
+            - heading "Bayt.com tests" [level=4] [ref=e425]
+            - generic [ref=e426]: "Test credits: 0"
+          - generic [ref=e428]:
+            - heading "Prove your skills for the job with Bayt.com tests" [level=3] [ref=e429]
+            - paragraph [ref=e430]: Take an assessment and publish your score so hiring employers can see.
+            - list [ref=e431]:
+              - listitem [ref=e432]:
+                - img "IQ Test" [ref=e433]
+                - generic [ref=e434]:
+                  - generic [ref=e435]:
+                    - link "IQ Test" [ref=e436] [cursor=pointer]:
+                      - /url: /en/courses/online-exam/view/707/
+                    - paragraph [ref=e437]: Take our IQ test and post the score to your CV. Assess your linguistic and verbal abilities, logical and numerical skills, perceptual skills and more.
+                    - list [ref=e438]:
+                      - listitem [ref=e439]: "Duration: 40 minutes"
+                      - listitem [ref=e440]: "Level: Basic"
+                  - link "Take test" [ref=e442] [cursor=pointer]:
+                    - /url: /en/courses/online-exam/view/707/
+                  - separator [ref=e443]
+              - listitem [ref=e444]:
+                - img "Software Engineering Skills Assessment" [ref=e445]
+                - generic [ref=e446]:
+                  - generic [ref=e447]:
+                    - link "Software Engineering Skills Assessment" [ref=e448] [cursor=pointer]:
+                      - /url: /en/courses/online-exam/view/1146/
+                    - paragraph [ref=e449]: Assess your skills in Software Engineering and post your score in areas like coding, debugging, integration and system testing, specifications testing and more.
+                    - list [ref=e450]:
+                      - listitem [ref=e451]: "Duration: 90 minutes"
+                      - listitem [ref=e452]: "Level: Intermediate"
+                  - link "Take test" [ref=e454] [cursor=pointer]:
+                    - /url: /en/courses/online-exam/view/1146/
+                  - separator [ref=e455]
+              - listitem [ref=e456]:
+                - img "English for Business Skills Test" [ref=e457]
+                - generic [ref=e458]:
+                  - generic [ref=e459]:
+                    - link "English for Business Skills Test" [ref=e460] [cursor=pointer]:
+                      - /url: /en/courses/online-exam/view/568/
+                    - paragraph [ref=e461]: Assess your English for Business skills. Subjects include business English, English language fundamentals, business writing in emails, official documents and more.
+                    - list [ref=e462]:
+                      - listitem [ref=e463]: "Duration: 40 minutes"
+                      - listitem [ref=e464]: "Level: Intermediate"
+                  - link "Take test" [ref=e466] [cursor=pointer]:
+                    - /url: /en/courses/online-exam/view/568/
+            - link "Browse all tests" [ref=e467] [cursor=pointer]:
+              - /url: /en/courses/learning-search/?keyword=*&get_rec_tests=1
+        - text:  
+    - generic [ref=e469]:
+      - button "Cancel" [ref=e470] [cursor=pointer]
+      - heading [level=5] [ref=e471]
+    - generic [ref=e477]:
+      - button "Cancel" [ref=e478] [cursor=pointer]
+      - heading "Tailor with Bayt AI" [level=5] [ref=e479]
+    - text:  Uploading.. 0%
+  - contentinfo [ref=e484]:
+    - generic [ref=e485]:
+      - generic [ref=e487]:
+        - generic [ref=e488]: Find Jobs
+        - list [ref=e489]:
+          - listitem [ref=e490]:
+            - link "Jobs in Abu Dhabi" [ref=e491] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-abu-dhabi/
+          - listitem [ref=e492]:
+            - link "Jobs in Dubai" [ref=e493] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-dubai/
+          - listitem [ref=e494]:
+            - link "Jobs in Algeria" [ref=e495] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/algeria/jobs/
+          - listitem [ref=e496]:
+            - link "Jobs in Bahrain" [ref=e497] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/bahrain/jobs/
+          - listitem [ref=e498]:
+            - link "Jobs in Egypt" [ref=e499] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/egypt/jobs/
+          - listitem [ref=e500]:
+            - link "Jobs in India" [ref=e501] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/india/jobs/
+          - listitem [ref=e502]:
+            - link "Jobs in Iraq" [ref=e503] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/iraq/jobs/
+          - listitem [ref=e504]:
+            - link "Jobs in Jordan" [ref=e505] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/jordan/jobs/
+          - listitem [ref=e506]:
+            - link "Jobs in Kuwait" [ref=e507] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/kuwait/jobs/
+          - listitem [ref=e508]:
+            - link "Jobs in Lebanon" [ref=e509] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/lebanon/jobs/
+          - listitem [ref=e510]:
+            - link "Jobs in Libya" [ref=e511] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/libya/jobs/
+          - listitem [ref=e512]:
+            - link "Jobs in Morocco" [ref=e513] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/morocco/jobs/
+          - listitem [ref=e514]:
+            - link "Jobs in Oman" [ref=e515] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/oman/jobs/
+          - listitem [ref=e516]:
+            - link "Jobs in Pakistan" [ref=e517] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/pakistan/jobs/
+          - listitem [ref=e518]:
+            - link "Jobs in Qatar" [ref=e519] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/qatar/jobs/
+          - listitem [ref=e520]:
+            - link "Jobs in Saudi Arabia" [ref=e521] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/saudi-arabia/jobs/
+          - listitem [ref=e522]:
+            - link "Jobs in Tunisia" [ref=e523] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/tunisia/jobs/
+          - listitem [ref=e524]:
+            - link "Jobs in UAE" [ref=e525] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/
+          - listitem [ref=e526]:
+            - link "Jobs in Yemen" [ref=e527] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/yemen/jobs/
+      - generic [ref=e528]:
+        - generic [ref=e529]:
+          - generic [ref=e530]: About Bayt.com
+          - generic [ref=e531]: Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.
+          - list [ref=e532]:
+            - listitem [ref=e533]:
+              - link "Facebook" [ref=e534] [cursor=pointer]:
+                - /url: https://www.facebook.com/Baytcom
+                - text: 
+            - listitem [ref=e535]:
+              - link "Twitter" [ref=e536] [cursor=pointer]:
+                - /url: https://x.com/Baytcom
+                - text: 
+            - listitem [ref=e537]:
+              - link "LinkedIn" [ref=e538] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/bayt.com
+                - text: 
+            - listitem [ref=e539]:
+              - link "YouTube" [ref=e540] [cursor=pointer]:
+                - /url: https://www.youtube.com/Baytcom
+                - text: 
+            - listitem [ref=e541]:
+              - link "Instagram" [ref=e542] [cursor=pointer]:
+                - /url: https://www.instagram.com/baytcom/
+                - text: 
+            - listitem [ref=e543]:
+              - link "TikTok" [ref=e544] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@bayt.com
+                - text: 
+            - listitem [ref=e545]:
+              - link "Spotify" [ref=e546] [cursor=pointer]:
+                - /url: https://open.spotify.com/show/7sTLIVz8cTQBgCqSdxrZLb
+                - text: 
+            - listitem [ref=e547]:
+              - link "Apple Podcasts" [ref=e548] [cursor=pointer]:
+                - /url: https://podcasts.apple.com/ae/podcast/bayt-cast-big-ideas-bigger-opportunities/id1812642116
+                - text: 
+            - listitem [ref=e549]:
+              - link "Anghami" [ref=e550] [cursor=pointer]:
+                - /url: https://open.anghami.com/6gJH51K3vWb
+                - text: 
+        - generic [ref=e551]:
+          - generic [ref=e552]: Company
+          - list [ref=e553]:
+            - listitem [ref=e554]:
+              - link "About Us" [ref=e555] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/
+            - listitem [ref=e556]:
+              - link "Contact Us" [ref=e557] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/contact-us/
+            - listitem [ref=e558]:
+              - link "Careers" [ref=e559] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/international/jobs/bayt.com-jobs/?filters%5Bgid_pid%5D%5B0%5D=1480348-0
+            - listitem [ref=e560]:
+              - link "Press Corner" [ref=e561] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/press/
+            - listitem [ref=e562]:
+              - link "Advertise With Us" [ref=e563] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/advertise/
+        - generic [ref=e564]:
+          - generic [ref=e565]: Quick Links
+          - list [ref=e566]:
+            - listitem [ref=e567]:
+              - link "Blog" [ref=e568] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/blog/
+            - listitem [ref=e569]:
+              - link "Podcasts" [ref=e570] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/podcasts/
+        - generic [ref=e571]:
+          - generic [ref=e572]: Get the Bayt App
+          - generic [ref=e573]:
+            - link "Get it on Google Play" [ref=e574] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.bayt
+              - img "Get it on Google Play" [ref=e575]
+            - link "Download on the App Store" [ref=e576] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/bayt-com-job-search/id510893233
+              - img "Download on the App Store" [ref=e577]
+          - generic [ref=e578]:
+            - img "Bayt App QR Code" [ref=e579]
+            - generic [ref=e580]:
+              - generic [ref=e581]: Scan the QR code to get the app
+              - img "arrow pointer" [ref=e582]
+      - separator [ref=e583]
+      - generic [ref=e584]:
+        - generic [ref=e585]:
+          - list [ref=e586]:
+            - listitem [ref=e587]:
+              - link "Privacy Policy" [ref=e588] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/privacy-statement/
+            - listitem [ref=e589]:
+              - link "Cookie Policy" [ref=e590] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/cookie-policy/
+            - listitem [ref=e591]: Cookie Settings
+            - listitem [ref=e592]:
+              - link "Terms of Use" [ref=e593] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/terms/
+            - listitem [ref=e594]:
+              - link "Trust Center " [ref=e595] [cursor=pointer]:
+                - /url: https://trust.bayt.com/
+                - text: Trust Center
+                - generic [ref=e596]: 
+            - listitem [ref=e597]:
+              - link "Stay Safe" [ref=e598] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/security-message/
+          - generic [ref=e599]: Copyright © 2000-2026 Bayt.com. All rights reserved.
+        - link " العربية" [ref=e601] [cursor=pointer]:
+          - /url: /ar/mycvs/
+          - generic [ref=e602]: 
+          - text: العربية

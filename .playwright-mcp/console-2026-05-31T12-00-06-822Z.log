@@ -1,0 +1,11 @@
+[    1485ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'nationalityToolTip')
+    at nationalityTipInit (https://secure.b8cdn.com/bayt/assets/profile-709so50s/js/profileB8.js:285:98)
+    at Object.setup (https://secure.b8cdn.com/bayt/assets/profile-709so50s/js/profileB8.js:46:40)
+    at https://www.bayt.com/en/mycvs/:1524:962
+    at https://secure.b8cdn.com/bayt/assets/baytui-agyjyp2e/js/B8com.es6.js:3:24362
+    at Ht (https://secure.b8cdn.com/bayt/assets/baytui-agyjyp2e/js/B8com.es6.js:3:24374) @ https://www.bayt.com/en/mycvs/:1523
+[  485541ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://www.bayt.com/ajax/profile/profile/get-edit-mode-forms/?lang=en&_=1649529381238&formName=targetJob&cv_id=55404413&lang=en&wizardMinified=0:0
+[  488697ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.ch0Jz-JlMrQ.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_YD4KoV8fTh_kLhktsiThAm3yJ5A/cb=gapi.loaded_0?le=scs,fedcm_migration_mod:191
+[  488975ms] [INFO] Loading the script 'https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.IdpIFrameHttp.en_US.puU7blQC1Y0.2018.O/am=BBAABw/d=1/rs=AOaEmlEN-uIYONVHMipTn_6mDboB-ywO6A/m=base' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' blob: data:". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The policy is report-only, so the violation has been logged but no further action has been taken. @ https://accounts.google.com/o/oauth2/iframe#origin=https%3A%2F%2Fwww.bayt.com&rpcToken=645590932.8389931&supportBlocked3PCookies=1:0
+[  489014ms] [WARNING] Your client application uses libraries for user authentication or authorization that are deprecated. See the [Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) for more information. @ https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.ch0Jz-JlMrQ.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_YD4KoV8fTh_kLhktsiThAm3yJ5A/cb=gapi.loaded_0?le=scs,fedcm_migration_mod:171
+[  489053ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://accounts.google.com/_/IdpIFrameHttp/cspreport/fine-allowlist:0

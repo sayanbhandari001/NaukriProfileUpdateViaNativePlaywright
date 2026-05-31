@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "foundit logo" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Foundit Logo" [ref=e6]
+        - navigation [ref=e7]:
+          - generic [ref=e8]: New to foundit?
+          - generic [ref=e9] [cursor=pointer]: Register
+          - generic [ref=e10]: here
+    - generic [ref=e12]:
+      - img "QR Code" [ref=e16]
+      - main [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - heading "Welcome back!" [level=1] [ref=e20]
+            - paragraph [ref=e21]: "Select method to login:"
+            - generic [ref=e22]:
+              - button "Google icon Google" [ref=e23] [cursor=pointer]:
+                - img "Google icon" [ref=e24]
+                - text: Google
+              - button "LinkedIn icon LinkedIn" [ref=e25] [cursor=pointer]:
+                - img "LinkedIn icon" [ref=e26]
+                - text: LinkedIn
+            - generic [ref=e29]: or continue with
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - paragraph [ref=e34]: Email ID *
+                - textbox "Email ID *" [ref=e38]:
+                  - /placeholder: Enter Email ID
+                  - text: sayanbhandari007@gmail.com
+              - generic [ref=e39]:
+                - generic [ref=e40]:
+                  - paragraph [ref=e42]: Password *
+                  - generic [ref=e44]:
+                    - textbox "Password *" [ref=e45]:
+                      - /placeholder: Enter your password
+                      - text: Job$@Pass1AllPortal
+                    - button [ref=e47] [cursor=pointer]:
+                      - img [ref=e48]
+                - generic [ref=e51] [cursor=pointer]: Forgot Password?
+              - button "submit" [ref=e52] [cursor=pointer]: Login
+            - generic [ref=e53]: Login via OTP
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: Your dream job is a click away! Get the app on your mobile
+            - generic [ref=e57]:
+              - img "QR Code" [ref=e59]
+              - generic [ref=e60]:
+                - link "IOS Download" [ref=e61] [cursor=pointer]:
+                  - /url: https://apps.apple.com/in/app/monster-jobs/id525775161
+                  - img "IOS Download" [ref=e62]
+                - link "Android Download" [ref=e63] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.monsterindia.seeker.views
+                  - img "Android Download" [ref=e64]
+    - contentinfo [ref=e65]:
+      - generic [ref=e67]:
+        - generic [ref=e73]:
+          - textbox [ref=e74]: Singapore
+          - img [ref=e77] [cursor=pointer]
+        - generic [ref=e80]: © 2026 foundit | All rights Reserved
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - heading "Contact Us" [level=2] [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e88]
+              - generic [ref=e90]:
+                - 'link "Toll No: +65 6359 2864" [ref=e91] [cursor=pointer]':
+                  - /url: tel:+65 6359 2864
+                - 'link "Toll Free No: 800-101-2339" [ref=e93] [cursor=pointer]':
+                  - /url: tel:800-101-2339
+            - generic [ref=e94]:
+              - img [ref=e96]
+              - link "mail at" [ref=e98] [cursor=pointer]:
+                - /url: mailto:info@foundit.sg
+                - text: info@foundit.sg
+        - generic [ref=e100]:
+          - generic [ref=e101]: Follow us
+          - generic [ref=e102]:
+            - link "Twitter" [ref=e103] [cursor=pointer]:
+              - /url: https://twitter.com/foundit_SG
+              - img [ref=e104]
+            - link "Facebook" [ref=e106] [cursor=pointer]:
+              - /url: https://www.facebook.com/founditSG/
+              - img [ref=e107]
+            - link "Youtube" [ref=e110] [cursor=pointer]:
+              - /url: https://www.youtube.com/@foundit_SouthEastAsia
+              - img [ref=e111]
+        - generic [ref=e115]:
+          - heading "Employers Login" [level=2] [ref=e116]
+          - link "Login" [ref=e117] [cursor=pointer]:
+            - /url: https://recruiter.foundit.sg/?login=yes
+  - alert [ref=e118]
+  - generic [ref=e119]:
+    - img [ref=e120]
+    - generic [ref=e123]: Invalid credentials, please try again.
+    - img [ref=e125] [cursor=pointer]

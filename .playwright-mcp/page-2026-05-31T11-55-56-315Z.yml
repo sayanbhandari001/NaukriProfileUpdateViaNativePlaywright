@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e3]:
+      - text: 
+      - listitem [ref=e4]:
+        - link "Bayt.com" [ref=e5] [cursor=pointer]:
+          - /url: https://www.bayt.com/
+          - img "Bayt.com" [ref=e6]
+      - listitem [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/india/
+          - listitem [ref=e11] [cursor=pointer]:
+            - generic [ref=e12]:
+              - text: Find Jobs
+              - generic [ref=e13]: 
+          - listitem [ref=e14]:
+            - link "Create Your Profile" [ref=e15] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/register-j/
+          - listitem [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]:
+              - text: Resources
+              - generic [ref=e18]: 
+          - listitem [ref=e19]:
+            - link "Premium" [ref=e20] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/premium/
+          - text: 
+          - listitem
+          - listitem [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - link "Log In" [ref=e24] [cursor=pointer]:
+                  - /url: https://www.bayt.com/en/login/
+              - listitem [ref=e25]:
+                - link "Register" [ref=e26] [cursor=pointer]:
+                  - /url: https://www.bayt.com/en/register-j/
+          - listitem [ref=e27]:
+            - list [ref=e28]:
+              - text: 
+              - listitem [ref=e29]:
+                - link "Apps" [ref=e30] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - generic "More on Bayt.com" [ref=e31]:
+                    - generic [ref=e32]: 
+                - text:     
+          - listitem [ref=e33]:
+            - list [ref=e34]:
+              - listitem [ref=e35]:
+                - link "العربية" [ref=e36] [cursor=pointer]:
+                  - /url: /ar/profile/
+              - listitem [ref=e37]:
+                - link "For Employers " [ref=e38] [cursor=pointer]:
+                  - /url: https://www.bayt.com/en/employers/
+                  - text: For Employers
+                  - generic [ref=e39]: 
+          - text: 
+  - generic [ref=e43]:
+    - img [ref=e45]
+    - generic [ref=e46]:
+      - text: Oops, we couldn't find that page!
+      - paragraph [ref=e47]: It might have been removed, renamed or temporarily unavailable. Let's help you get back on track.
+      - link "Find jobs" [ref=e48] [cursor=pointer]:
+        - /url: https://www.bayt.com/en/jobs/
+      - link "Go back home" [ref=e49] [cursor=pointer]:
+        - /url: https://www.bayt.com/en/india/
+  - contentinfo [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - generic [ref=e54]: Find Jobs
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - link "Jobs in Abu Dhabi" [ref=e57] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-abu-dhabi/
+          - listitem [ref=e58]:
+            - link "Jobs in Dubai" [ref=e59] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-dubai/
+          - listitem [ref=e60]:
+            - link "Jobs in Algeria" [ref=e61] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/algeria/jobs/
+          - listitem [ref=e62]:
+            - link "Jobs in Bahrain" [ref=e63] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/bahrain/jobs/
+          - listitem [ref=e64]:
+            - link "Jobs in Egypt" [ref=e65] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/egypt/jobs/
+          - listitem [ref=e66]:
+            - link "Jobs in India" [ref=e67] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/india/jobs/
+          - listitem [ref=e68]:
+            - link "Jobs in Iraq" [ref=e69] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/iraq/jobs/
+          - listitem [ref=e70]:
+            - link "Jobs in Jordan" [ref=e71] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/jordan/jobs/
+          - listitem [ref=e72]:
+            - link "Jobs in Kuwait" [ref=e73] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/kuwait/jobs/
+          - listitem [ref=e74]:
+            - link "Jobs in Lebanon" [ref=e75] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/lebanon/jobs/
+          - listitem [ref=e76]:
+            - link "Jobs in Libya" [ref=e77] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/libya/jobs/
+          - listitem [ref=e78]:
+            - link "Jobs in Morocco" [ref=e79] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/morocco/jobs/
+          - listitem [ref=e80]:
+            - link "Jobs in Oman" [ref=e81] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/oman/jobs/
+          - listitem [ref=e82]:
+            - link "Jobs in Pakistan" [ref=e83] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/pakistan/jobs/
+          - listitem [ref=e84]:
+            - link "Jobs in Qatar" [ref=e85] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/qatar/jobs/
+          - listitem [ref=e86]:
+            - link "Jobs in Saudi Arabia" [ref=e87] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/saudi-arabia/jobs/
+          - listitem [ref=e88]:
+            - link "Jobs in Tunisia" [ref=e89] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/tunisia/jobs/
+          - listitem [ref=e90]:
+            - link "Jobs in UAE" [ref=e91] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/
+          - listitem [ref=e92]:
+            - link "Jobs in Yemen" [ref=e93] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/yemen/jobs/
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: About Bayt.com
+          - generic [ref=e97]: Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - link "Facebook" [ref=e100] [cursor=pointer]:
+                - /url: https://www.facebook.com/Baytcom
+                - text: 
+            - listitem [ref=e101]:
+              - link "Twitter" [ref=e102] [cursor=pointer]:
+                - /url: https://x.com/Baytcom
+                - text: 
+            - listitem [ref=e103]:
+              - link "LinkedIn" [ref=e104] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/bayt.com
+                - text: 
+            - listitem [ref=e105]:
+              - link "YouTube" [ref=e106] [cursor=pointer]:
+                - /url: https://www.youtube.com/Baytcom
+                - text: 
+            - listitem [ref=e107]:
+              - link "Instagram" [ref=e108] [cursor=pointer]:
+                - /url: https://www.instagram.com/baytcom/
+                - text: 
+            - listitem [ref=e109]:
+              - link "TikTok" [ref=e110] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@bayt.com
+                - text: 
+            - listitem [ref=e111]:
+              - link "Spotify" [ref=e112] [cursor=pointer]:
+                - /url: https://open.spotify.com/show/7sTLIVz8cTQBgCqSdxrZLb
+                - text: 
+            - listitem [ref=e113]:
+              - link "Apple Podcasts" [ref=e114] [cursor=pointer]:
+                - /url: https://podcasts.apple.com/ae/podcast/bayt-cast-big-ideas-bigger-opportunities/id1812642116
+                - text: 
+            - listitem [ref=e115]:
+              - link "Anghami" [ref=e116] [cursor=pointer]:
+                - /url: https://open.anghami.com/6gJH51K3vWb
+                - text: 
+        - generic [ref=e117]:
+          - generic [ref=e118]: Company
+          - list [ref=e119]:
+            - listitem [ref=e120]:
+              - link "About Us" [ref=e121] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/
+            - listitem [ref=e122]:
+              - link "Contact Us" [ref=e123] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/contact-us/
+            - listitem [ref=e124]:
+              - link "Careers" [ref=e125] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/international/jobs/bayt.com-jobs/?filters%5Bgid_pid%5D%5B0%5D=1480348-0
+            - listitem [ref=e126]:
+              - link "Press Corner" [ref=e127] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/press/
+            - listitem [ref=e128]:
+              - link "Advertise With Us" [ref=e129] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/advertise/
+        - generic [ref=e130]:
+          - generic [ref=e131]: Quick Links
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "Blog" [ref=e134] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/blog/
+            - listitem [ref=e135]:
+              - link "Podcasts" [ref=e136] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/podcasts/
+        - generic [ref=e137]:
+          - generic [ref=e138]: Get the Bayt App
+          - generic [ref=e139]:
+            - link "Get it on Google Play" [ref=e140] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.bayt
+              - img "Get it on Google Play" [ref=e141]
+            - link "Download on the App Store" [ref=e142] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/bayt-com-job-search/id510893233
+              - img "Download on the App Store" [ref=e143]
+          - generic [ref=e144]:
+            - img "Bayt App QR Code" [ref=e145]
+            - generic [ref=e146]:
+              - generic [ref=e147]: Scan the QR code to get the app
+              - img "arrow pointer" [ref=e148]
+      - separator [ref=e149]
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - list [ref=e152]:
+            - listitem [ref=e153]:
+              - link "Privacy Policy" [ref=e154] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/privacy-statement/
+            - listitem [ref=e155]:
+              - link "Cookie Policy" [ref=e156] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/cookie-policy/
+            - listitem [ref=e157]: Cookie Settings
+            - listitem [ref=e158]:
+              - link "Terms of Use" [ref=e159] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/terms/
+            - listitem [ref=e160]:
+              - link "Trust Center " [ref=e161] [cursor=pointer]:
+                - /url: https://trust.bayt.com/
+                - text: Trust Center
+                - generic [ref=e162]: 
+            - listitem [ref=e163]:
+              - link "Stay Safe" [ref=e164] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/security-message/
+          - generic [ref=e165]: Copyright © 2000-2026 Bayt.com. All rights reserved.
+        - link " العربية" [ref=e167] [cursor=pointer]:
+          - /url: /ar/profile/
+          - generic [ref=e168]: 
+          - text: العربية

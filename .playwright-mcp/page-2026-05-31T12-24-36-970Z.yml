@@ -1,0 +1,493 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e367]:
+    - generic [ref=e368]:
+      - img "foundit Logo" [ref=e370] [cursor=pointer]
+      - generic [ref=e372]:
+        - link "Jobs" [ref=e375] [cursor=pointer]:
+          - /url: /seeker/dashboard
+        - link "Services" [ref=e378] [cursor=pointer]:
+          - /url: /career-services
+    - generic [ref=e382]:
+      - generic [ref=e384]:
+        - textbox "Search by Skills, Company or Job Title" [ref=e388]
+        - generic: Please enter a job title/role/skill to search
+      - generic [ref=e391]:
+        - textbox "Location" [ref=e395]
+        - generic: Please enter a job title/role/skill to search
+      - generic [ref=e398]:
+        - textbox "Experience" [ref=e402]
+        - img [ref=e405]
+        - generic: Please enter a job title/role/skill to search
+      - button [ref=e407] [cursor=pointer]:
+        - img [ref=e408]
+    - generic [ref=e412]:
+      - img [ref=e415] [cursor=pointer]
+      - link [ref=e417] [cursor=pointer]:
+        - /url: /web/en/cart
+        - img [ref=e420]
+      - generic [ref=e422] [cursor=pointer]:
+        - img "Sayan Bhandari" [ref=e424]
+        - generic [ref=e425]: Hi, Sayan Bhandari
+        - img [ref=e426]
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e428]:
+        - img [ref=e429]
+        - generic [ref=e435]:
+          - generic [ref=e436]:
+            - img "profile picture" [ref=e438]
+            - generic [ref=e439]:
+              - generic [ref=e440]:
+                - generic [ref=e441]: Sayan Bhandari
+                - button [ref=e442] [cursor=pointer]:
+                  - img [ref=e443]
+              - generic [ref=e445]: Software Test
+              - generic [ref=e446]: Mastercard
+              - generic [ref=e447]: Nov 2023 - Present • 2 Yr 6 Mos
+              - generic [ref=e448]: Mumbai
+          - separator [ref=e449]
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - generic [ref=e452]: Total exp
+              - generic [ref=e453]: 8 yrs 0 mos
+            - generic [ref=e454]:
+              - generic [ref=e455]: Salary
+              - generic [ref=e456]: INR 2.5L (Monthly)
+            - generic [ref=e457]:
+              - generic [ref=e458]: Notice period
+              - generic [ref=e459]: Immediately available
+          - generic [ref=e460]:
+            - img [ref=e461]
+            - text: "Profile last updated on: 31 May, 2026"
+      - generic [ref=e464]:
+        - generic [ref=e465]:
+          - img [ref=e466]
+          - paragraph [ref=e470]: +91 8806822007
+          - button [ref=e471] [cursor=pointer]:
+            - img [ref=e472]
+        - generic [ref=e474]:
+          - img [ref=e475]
+          - paragraph [ref=e479]: sayanbhandari007@gmail.com
+      - generic [ref=e53]:
+        - generic [ref=e480]:
+          - generic [ref=e481]:
+            - generic [ref=e482]:
+              - img [ref=e483]
+              - generic [ref=e487]: 90%
+            - generic [ref=e488]:
+              - generic [ref=e489]: Profile score
+              - generic [ref=e490]: Recruiters seek 100% profiles - complete yours to stand out!
+          - generic [ref=e491]:
+            - generic [ref=e492]: Pending action
+            - generic [ref=e494] [cursor=pointer]:
+              - generic [ref=e495]:
+                - img [ref=e497]
+                - generic [ref=e500]:
+                  - generic [ref=e501]: Add Industry
+                  - generic [ref=e502]: +10%
+              - img [ref=e503]
+        - iframe [ref=e508]:
+          - link [ref=f28e2] [cursor=pointer]:
+            - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjss6IVM7W8vObneS7XwmvL5ZjC103k8sVESMlDziaAE-qJ2-mMmfZQ_KJCbCdg0sEo9NyWsYiOo1_cnRHlCiMWoXEjMceUo0I3SuJXk_Ieuf05rGj9McvBDnB8R90eT8mHzFi_Aer0lTLU7Ff4lyzbS75pD27XfjOm0ouuPnOFcxjf_Phq6W_bmLGByCXbrzB2NYV4Z3Ugy1dRmIpus6FOjtY_YkhZ7frb0cLCOgOSiXjyWVwtsVZwHDWqdNTxU6o93BKmaWbbS2PWHsGPB1M6jmsSG9f-c4Q3zN-FlwR-hK2aZJTkfrxzsyYOO4Fo2HsT6BLXQZsZXz0lI2192Th020f67mg6MJjWGm_xCzU0D36dY9ph4N-viKXqfOLBn3rQ7wrMJcLwLbp0I2S4dG7wlzovhrAEKIFUKlenGuqh7OV2-2heX31mvFPcy7Saads4PeFVMLJkObuOwGgw&sai=AMfl-YT8z5vRYdZ7Ln84MUaVbpRrYb98ZoWEF_On-Tresn1dZ-WMZYXwQTV_tfV7yXsW0yIC5LbNtvem9FiRpXtPMbtHDUvn89RuUWhbNphux9bdGqLeB1RiRM5xEQmTx1afb-pQz_XGhoO3JmpoCBUQuaR8JrEtwKOMP2vT8kmfu7iH2S1hGoI6wcTHTcE3ohnd0O3AhNMXXbBLxbhXg1Cf_hlkESVvgrCdpaTLS4EYU1BIZYwBeMStcRd638Y6CM4y3vSXDmwSwOhXrYprUsO9nhJq-W7EdQwyI7kcH0i-t4utgMFraa4MuDQ2YeIrPIquP0JwiF0667oo6Sy-oxCq0WSWoxZKp0dNMqD2gjhOoC4XaxERQp_8W4U&sig=Cg0ArKJSzCJvoaRJnf0m&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.foundit.in/search/xikyahcsinx-jobs%3Fquery%3DXikyahcsinx%252CXikyaainx%252CXmagnaainx%252CXmagnainx%26queryDerived%3Dtrue
+    - generic [ref=e69]:
+      - generic [ref=e71]:
+        - generic [ref=e73]:
+          - generic [ref=e75]:
+            - img "profile picture" [ref=e509]
+            - generic [ref=e78]:
+              - paragraph [ref=e79]: Sayan Bhandari
+              - paragraph [ref=e80]: Software Test
+          - generic [ref=e83]:
+            - generic [ref=e84] [cursor=pointer]: Profile summary
+            - generic [ref=e85] [cursor=pointer]: Work experience
+            - generic [ref=e87] [cursor=pointer]: Skills
+            - generic [ref=e88] [cursor=pointer]: Education
+            - generic [ref=e90] [cursor=pointer]: Job preferences
+            - generic [ref=e91] [cursor=pointer]: Personal details
+            - generic [ref=e92] [cursor=pointer]:
+              - text: Courses & certifications
+              - paragraph [ref=e93]
+            - generic [ref=e94] [cursor=pointer]:
+              - text: Projects
+              - paragraph [ref=e95]
+            - generic [ref=e96] [cursor=pointer]:
+              - text: Awards
+              - paragraph [ref=e97]
+            - generic [ref=e98] [cursor=pointer]: Social links
+            - generic [ref=e100] [cursor=pointer]: Language
+        - generic [ref=e102]:
+          - generic [ref=e510] [cursor=pointer]: Profile summary
+          - generic [ref=e511] [cursor=pointer]: Work experience
+          - generic [ref=e512] [cursor=pointer]: Skills
+          - generic [ref=e513] [cursor=pointer]: Education
+          - generic [ref=e514] [cursor=pointer]: Job preferences
+          - generic [ref=e515] [cursor=pointer]: Personal details
+          - button [ref=e516] [cursor=pointer]:
+            - img [ref=e517]
+      - generic [ref=e122]:
+        - generic [ref=e521]:
+          - generic [ref=e522]: Profile summary
+          - button [ref=e523] [cursor=pointer]:
+            - img [ref=e524]
+        - paragraph [ref=e526]: 8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing.
+        - button "Generate by AI" [ref=e528] [cursor=pointer]:
+          - img [ref=e530]
+          - text: Generate by AI
+      - generic [ref=e133]:
+        - generic [ref=e536]: Resume
+        - generic [ref=e538]:
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - img [ref=e545]
+              - button "Sayan_Bhandari_Softw....pdf" [ref=e548] [cursor=pointer]:
+                - paragraph [ref=e549]: Sayan_Bhandari_Softw....pdf
+            - button [ref=e550] [cursor=pointer]:
+              - img [ref=e551]
+          - button "Replace resume" [ref=e553] [cursor=pointer]
+      - generic [ref=e142]:
+        - generic [ref=e554]:
+          - generic [ref=e555]: Work experience
+          - button [ref=e556] [cursor=pointer]:
+            - img [ref=e557]
+        - generic [ref=e560]:
+          - img
+          - generic:
+            - img:
+              - generic: "2018"
+              - generic: "2019"
+              - generic: "2020"
+              - generic: "2021"
+              - generic: "2022"
+              - generic: "2023"
+              - generic: "2024"
+              - generic: "2025"
+              - generic: "2026"
+              - generic: "2027"
+              - generic:
+                - generic:
+                  - text: Mastercard
+                  - generic: Software Test
+                  - generic: Nov 2023-Present
+                - generic: 2 yrs 6 m
+              - generic:
+                - generic:
+                  - text: Aptech Limited
+                  - generic: System Administr...
+                  - generic: Apr 2017-Jan 2018
+                - generic: 9 m
+              - generic:
+                - generic: Gap
+                - generic: 5 yrs 10 m
+              - generic:
+                - generic: Gap
+                - generic: 5 yrs 10 m
+            - generic:
+              - img
+        - generic [ref=e562]:
+          - generic [ref=e563]:
+            - paragraph [ref=e565]:
+              - img [ref=e566]
+            - generic [ref=e569]:
+              - paragraph [ref=e571]: Mastercard
+              - generic [ref=e572]:
+                - generic [ref=e573]: Software Test
+                - button [ref=e574] [cursor=pointer]:
+                  - img [ref=e575]
+              - generic [ref=e577]:
+                - generic [ref=e578]: Nov 2023 - Present (2 yrs, 6 m)
+                - generic [ref=e579]: •
+                - generic [ref=e580]: Full time
+                - generic [ref=e581]: •
+                - generic [ref=e582]: "Salary: INR 2.5L (Monthly)"
+                - generic [ref=e583]: "•Notice Period: Immediately available"
+              - generic [ref=e584]: 8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing.
+          - generic [ref=e585]:
+            - paragraph [ref=e587]:
+              - img [ref=e588]
+            - generic [ref=e591]:
+              - paragraph [ref=e593]: Aptech Limited
+              - generic [ref=e594]:
+                - generic [ref=e595]: System Administrator
+                - button [ref=e596] [cursor=pointer]:
+                  - img [ref=e597]
+              - generic [ref=e599]:
+                - generic [ref=e600]: Apr 2017 - Jan 2018 (9 m)
+                - generic [ref=e601]: •
+                - generic [ref=e602]: Full time
+                - generic [ref=e603]: •
+                - generic [ref=e604]: "Salary: INR 2.5L (Monthly)"
+      - generic [ref=e605]:
+        - generic [ref=e606]:
+          - generic [ref=e607]: Skills
+          - button [ref=e608] [cursor=pointer]:
+            - img [ref=e609]
+        - generic [ref=e612]:
+          - generic [ref=e613]: System Admin
+          - generic [ref=e614]: Manual Testing
+          - generic [ref=e615]: Software Testing
+          - generic [ref=e616]: Sql Server
+          - generic [ref=e617]: Web Development
+      - generic [ref=e619]:
+        - generic [ref=e620]:
+          - generic [ref=e621]: Education
+          - button [ref=e622] [cursor=pointer]:
+            - img [ref=e623]
+        - generic [ref=e911]:
+          - generic [ref=e912]:
+            - paragraph [ref=e914]: Bachelor of Science (B.Sc) • IT
+            - button [ref=e915] [cursor=pointer]:
+              - img [ref=e916]
+          - paragraph [ref=e918]: Mumbai University
+          - generic [ref=e919]: 2017 • Full time
+      - generic [ref=e635]:
+        - generic [ref=e636]:
+          - generic [ref=e637]: Job preferences
+          - button [ref=e638] [cursor=pointer]:
+            - img [ref=e639]
+        - generic [ref=e641]:
+          - generic [ref=e642]: Preferred Job Title
+          - generic [ref=e643]: System Administrator
+        - generic [ref=e644]:
+          - generic [ref=e645]: Preferred Location
+          - generic [ref=e646]: Mumbai, Mumbai City
+      - generic [ref=e648]:
+        - generic [ref=e649]:
+          - generic [ref=e650]: Personal details
+          - button [ref=e651] [cursor=pointer]:
+            - img [ref=e652]
+        - generic [ref=e654]:
+          - generic [ref=e655]:
+            - generic [ref=e656]: Equal Opportunity
+            - generic [ref=e657]: "-"
+          - generic [ref=e658]:
+            - generic [ref=e659]: Countries of Residency
+            - generic [ref=e660]: "-"
+          - generic [ref=e661]:
+            - generic [ref=e662]: Work Permit Countries
+            - generic [ref=e663]: "-"
+          - generic [ref=e664]:
+            - generic [ref=e665]: Nationality
+            - generic [ref=e666]: Indian
+          - generic [ref=e667]:
+            - generic [ref=e668]: Specially Abled
+            - generic [ref=e669]: "No"
+      - generic [ref=e671]:
+        - generic [ref=e672]: Courses & certifications
+        - button [ref=e673] [cursor=pointer]:
+          - img [ref=e674]
+      - generic [ref=e676]:
+        - generic [ref=e677]: Projects
+        - button [ref=e678] [cursor=pointer]:
+          - img [ref=e679]
+      - generic [ref=e681]:
+        - generic [ref=e682]: Awards
+        - button [ref=e683] [cursor=pointer]:
+          - img [ref=e684]
+      - generic [ref=e301]:
+        - generic [ref=e686]:
+          - generic [ref=e687]: Social Links
+          - button [ref=e688] [cursor=pointer]:
+            - img [ref=e689]
+        - generic [ref=e692]:
+          - generic [ref=e693]:
+            - img [ref=e695]
+            - link "https://www.linkedin.com/in/sayanbhandari/" [ref=e697] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/sayanbhandari/
+              - paragraph [ref=e698]: https://www.linkedin.com/in/sayanbhandari/
+          - img [ref=e700] [cursor=pointer]
+      - generic [ref=e702]:
+        - generic [ref=e703]:
+          - generic [ref=e704]: Languages
+          - button [ref=e705] [cursor=pointer]:
+            - img [ref=e706]
+        - generic [ref=e708]:
+          - generic [ref=e709]:
+            - generic [ref=e712]:
+              - generic [ref=e713]: English
+              - img [ref=e715] [cursor=pointer]
+            - generic [ref=e719]:
+              - generic [ref=e720]: Hindi
+              - img [ref=e722] [cursor=pointer]
+          - button "Show 1 more" [ref=e725] [cursor=pointer]:
+            - generic [ref=e726]:
+              - img [ref=e727]
+              - generic [ref=e729]: 1 more
+            - img [ref=e730]
+  - alert [ref=e732]
+  - contentinfo [ref=e734]:
+    - generic [ref=e736]:
+      - generic [ref=e738]:
+        - generic [ref=e739]:
+          - generic [ref=e740] [cursor=pointer]:
+            - paragraph [ref=e741]: Job Categories
+            - img [ref=e742]
+          - generic:
+            - link "Jobs By Skill" [ref=e745] [cursor=pointer]:
+              - /url: /search/jobs-by-skill
+            - link "Jobs By Function" [ref=e747] [cursor=pointer]:
+              - /url: /search/jobs-by-function
+            - link "Jobs By Industry" [ref=e749] [cursor=pointer]:
+              - /url: /search/jobs-by-industry
+        - generic [ref=e750]:
+          - generic [ref=e751] [cursor=pointer]:
+            - paragraph [ref=e752]: Employers
+            - img [ref=e753]
+          - generic:
+            - link "Employer Login" [ref=e756] [cursor=pointer]:
+              - /url: https://recruiter.foundit.sg/?login=yes
+            - link "Job Posting" [ref=e758] [cursor=pointer]:
+              - /url: https://recruiter.foundit.in/job-posting-services.html
+            - link "Access Resume Database" [ref=e760] [cursor=pointer]:
+              - /url: https://recruiter.foundit.in/v2/ecom/index.html
+            - link "Join mRecruiters" [ref=e762] [cursor=pointer]:
+              - /url: https://recruiter.foundit.in/v2/recruiter-sign-up.html
+            - link "Buy Online" [ref=e764] [cursor=pointer]:
+              - /url: https://recruiter.foundit.in/v2/ecom/index.html
+        - generic [ref=e765]:
+          - generic [ref=e766] [cursor=pointer]:
+            - paragraph [ref=e767]: Job Seekers
+            - img [ref=e768]
+          - generic:
+            - link "Upload Resume" [ref=e771] [cursor=pointer]:
+              - /url: /seeker/registration
+            - link "Search Tips" [ref=e773] [cursor=pointer]:
+              - /url: /info/search-tips
+            - link "Find Companies" [ref=e775] [cursor=pointer]:
+              - /url: /search/jobs-by-company
+            - link "Help" [ref=e777] [cursor=pointer]:
+              - /url: /info/help
+        - link "Career Advice" [ref=e780] [cursor=pointer]:
+          - /url: /career-advice/
+        - generic [ref=e781]:
+          - generic [ref=e782] [cursor=pointer]:
+            - paragraph [ref=e783]: Company Info
+            - img [ref=e784]
+          - generic:
+            - link "About Us" [ref=e787] [cursor=pointer]:
+              - /url: /info/about-us
+            - link "Contact Us" [ref=e789] [cursor=pointer]:
+              - /url: /info/contact-us
+            - link "Send Feedback" [ref=e791] [cursor=pointer]:
+              - /url: /info/feedback
+            - link "HTML Sitemap" [ref=e793] [cursor=pointer]:
+              - /url: /info/sitemap
+            - link "XML Sitemap" [ref=e795] [cursor=pointer]:
+              - /url: /xmlsitemap/sitemap-index.xml
+        - generic [ref=e796]:
+          - generic [ref=e797] [cursor=pointer]:
+            - paragraph [ref=e798]: IT Jobs
+            - img [ref=e799]
+          - generic:
+            - link "Java" [ref=e802] [cursor=pointer]:
+              - /url: /search/java-jobs
+            - link "IT Security" [ref=e804] [cursor=pointer]:
+              - /url: /search/it-security-jobs
+            - link "CSS" [ref=e806] [cursor=pointer]:
+              - /url: /search/css-jobs
+            - link "SQL" [ref=e808] [cursor=pointer]:
+              - /url: /search/sql-jobs
+            - link "Linux" [ref=e810] [cursor=pointer]:
+              - /url: /search/linux-jobs
+        - generic [ref=e811]:
+          - generic [ref=e812] [cursor=pointer]:
+            - paragraph [ref=e813]: Non IT Jobs
+            - img [ref=e814]
+          - generic:
+            - link "Accounting" [ref=e817] [cursor=pointer]:
+              - /url: /search/accounting-jobs
+            - link "HR" [ref=e819] [cursor=pointer]:
+              - /url: /search/hr-jobs
+            - link "Sales" [ref=e821] [cursor=pointer]:
+              - /url: /search/sales-jobs
+            - link "Electrical engineering" [ref=e823] [cursor=pointer]:
+              - /url: /search/electrical-engineering-jobs
+            - link "Civil Engineering" [ref=e825] [cursor=pointer]:
+              - /url: /search/civil-engineering-jobs
+      - list [ref=e827]:
+        - listitem [ref=e828]:
+          - generic [ref=e829]: Selected Country
+          - combobox "Selected Country" [ref=e830]:
+            - option "India"
+            - option "Gulf"
+            - option "Hong Kong"
+            - option "Singapore" [selected]
+            - option "Philippines"
+            - option "Thailand"
+            - option "Vietnam"
+            - option "Indonesia"
+            - option "Malaysia"
+        - listitem [ref=e831]:
+          - img [ref=e833]
+          - link "contact-info" [ref=e836] [cursor=pointer]:
+            - /url: tel:+65 6359 2864
+            - text: "Toll No: +65 6359 2864"
+          - text: "|"
+          - link "contact-info" [ref=e837] [cursor=pointer]:
+            - /url: tel:800-101-2339
+            - text: "Toll Free No: 800-101-2339"
+        - listitem [ref=e838]:
+          - img [ref=e840]
+          - link "mail" [ref=e842] [cursor=pointer]:
+            - /url: mailto:info@foundit.sg
+            - text: info@foundit.sg
+        - listitem [ref=e843]:
+          - img [ref=e845]
+          - text: Download The App
+          - generic [ref=e847]:
+            - link "IOS Download" [ref=e848] [cursor=pointer]:
+              - /url: https://apps.apple.com/in/app/monster-jobs/id525775161
+              - img "IOS Download" [ref=e849]
+            - link "Android Download" [ref=e850] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.monsterindia.seeker.views
+              - img "Android Download" [ref=e851]
+        - listitem [ref=e852]:
+          - generic [ref=e853]: Stay Connected
+          - link "stay-connected" [ref=e855] [cursor=pointer]:
+            - /url: https://www.facebook.com/founditSG/
+            - img [ref=e856]
+          - link "stay-connected" [ref=e859] [cursor=pointer]:
+            - /url: https://twitter.com/foundit_SG
+            - img [ref=e860]
+          - generic:
+            - link "stay-connected":
+              - /url: https://www.linkedin.com/company/foundit-jobs/
+          - link "stay-connected" [ref=e863] [cursor=pointer]:
+            - /url: https://www.instagram.com/foundit_sg/
+            - img [ref=e864]
+          - link "stay-connected" [ref=e867] [cursor=pointer]:
+            - /url: https://www.youtube.com/@foundit_SouthEastAsia
+            - img [ref=e868]
+        - listitem [ref=e870]:
+          - link "legal" [ref=e872] [cursor=pointer]:
+            - /url: https://www.foundit.sg/info/security-center
+            - text: Security & Fraud
+          - generic [ref=e873]:
+            - text: "|"
+            - link "legal" [ref=e874] [cursor=pointer]:
+              - /url: https://www.foundit.sg/info/privacy
+              - text: Privacy Policy
+          - generic [ref=e875]:
+            - text: "|"
+            - link "legal" [ref=e876] [cursor=pointer]:
+              - /url: https://www.foundit.sg/info/terms-of-use
+              - text: Terms of Use
+          - generic [ref=e877]:
+            - text: "|"
+            - link "legal" [ref=e878] [cursor=pointer]:
+              - /url: https://www.foundit.sg/info/besafe
+              - text: Be Safe
+          - generic [ref=e879]:
+            - text: "|"
+            - link "legal" [ref=e880] [cursor=pointer]:
+              - /url: https://www.foundit.sg/info/complaints
+              - text: Complaints
+          - link "legal" [ref=e882] [cursor=pointer]:
+            - /url: https://www.foundit.sg/info/privacy-notice
+            - text: Privacy Notice
+          - text: "|"
+          - paragraph [ref=e883]: © 2026 foundit | All rights Reserved
+  - img [ref=e884]
+  - generic [ref=e920]:
+    - img [ref=e921]
+    - generic [ref=e924]: Profile summary updated successfully
+    - img [ref=e926] [cursor=pointer]

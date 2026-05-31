@@ -1,0 +1,38 @@
+[     663ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://securepubads.g.doubleclick.net/tag/js/gpt.js:10
+[     860ms] [ERROR] ReferenceError: getCookie is not defined
+    at o.getUniqueUserId (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:70:316096)
+    at o.created (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:70:313247)
+    at Cn (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:21823)
+    at Gt (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:18923)
+    at t._init (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:42207)
+    at new o (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:46904)
+    at https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:32912
+    at init (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:32943)
+    at https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:67494
+    at p (https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:12:67770) @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:11
+[     944ms] [LOG] null @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:0
+[     988ms] [LOG] [ERROR registration]:  TypeError: Failed to register a ServiceWorker for scope ('https://www.foundit.sg/trex/public/theme_3/src/js/') with script ('https://www.foundit.sg/trex/public/theme_3/src/js/service-worker.js'): ServiceWorker script evaluation failed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1041ms] [LOG] CleverTap [1780229958551]: CleverTap info: 545: Null value for key 'utm_campaign' was removed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1042ms] [LOG] CleverTap [1780229958551]: CleverTap info: 545: Null value for key 'utm_medium' was removed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1042ms] [LOG] CleverTap [1780229958551]: CleverTap info: 545: Null value for key 'utm_source' was removed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1042ms] [LOG] CleverTap [1780229958551]: CleverTap info: 545: Null value for key 'utm_content' was removed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1042ms] [LOG] CleverTap [1780229958552]: CleverTap info: 545: Null value for key 'utm_term' was removed @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1208ms] [WARNING] [GPT] Slot.setTargeting is deprecated, use Slot.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#171 @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    1211ms] [WARNING] [GPT] PubAdsService.enableLazyLoad is deprecated, use googletag.setConfig({lazyLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://media.foundit.sg/trex/public/theme_3/dist/js/app.js?ver=20260521124857:98
+[    2923ms] Uncaught TagError: adsbygoogle.push() error: All 'ins' elements in the DOM with class=adsbygoogle already have ads in them.
+    at Er (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:231:254)
+    at tr (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:226:479)
+    at g.client (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:218:44)
+    at g (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:78:544)
+    at dk (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:79:705)
+    at or (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:218:32)
+    at nr (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:215:131)
+    at <anonymous> (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:240:60)
+    at g (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:78:544)
+    at dk (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:79:705)
+    at <anonymous> (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:238:457)
+    at <anonymous> (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:240:119)
+    at <anonymous> (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js:242:3)
+[    3045ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://o569505.ingest.sentry.io/api/5715328/store/?sentry_key=b592c357f1794fcbb380ff9fc6a6a165&sentry_version=7:0
