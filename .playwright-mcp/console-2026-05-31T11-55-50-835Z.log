@@ -1,0 +1,2 @@
+[    1533ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.bayt.com/en/candidates/profile/:0
+[    2728ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode. @ https://accounts.google.com/gsi/client:85

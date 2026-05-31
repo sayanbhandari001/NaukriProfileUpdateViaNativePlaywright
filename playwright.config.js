@@ -23,18 +23,39 @@ module.exports = defineConfig({
   },
   projects: [
     {
-      name: 'chromium',
-      use: {
-        browserName: 'chromium',
-      }
-     }
-// ,
-    // {
-    //   name: 'firefox',
-    //   use: { 
-    //     browserName: 'firefox',
-    //   },
-    // }
-    
+      name: 'priority-1',
+      grep: /@priority-1/,
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-2',
+      grep: /@priority-2/,
+      dependencies: ['priority-1'],
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-3',
+      grep: /@priority-3/,
+      dependencies: ['priority-2'],
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-6',
+      grep: /@priority-6/,
+      dependencies: ['priority-3'],
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-7',
+      grep: /@priority-7/,
+      dependencies: ['priority-6'],
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-8',
+      grep: /@priority-8/,
+      dependencies: ['priority-7'],
+      use: { browserName: 'chromium' },
+    },
   ]
 });

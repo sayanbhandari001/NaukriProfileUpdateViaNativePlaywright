@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - navigation "Primary" [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Indeed Home" [ref=e8] [cursor=pointer]:
+            - /url: /?from=gnav-homepage--homepage-frontend
+            - img [ref=e10]
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Home" [ref=e15] [cursor=pointer]:
+                - /url: https://ae.indeed.com/
+            - listitem [ref=e16]:
+              - link "Company reviews" [ref=e18] [cursor=pointer]:
+                - /url: https://ae.indeed.com/companies
+        - generic [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "Sign in" [ref=e24] [cursor=pointer]:
+                - /url: https://secure.indeed.com/auth?hl=en_AE&co=AE&continue=https%3A%2F%2Fae.indeed.com%2Fresumes&tmpl=desktop&from=gnav-util-homepage--homepage-frontend
+          - link "Employers / Post Job" [ref=e29] [cursor=pointer]:
+            - /url: https://ae.indeed.com/hire?co=AE&hl=en
+      - generic [ref=e30]: Start of main content
+  - main [ref=e31]:
+    - generic [ref=e32]:
+      - img "404" [ref=e33]
+      - heading "We can’t find this page" [level=1] [ref=e34]
+      - paragraph [ref=e35]: It looks like this page doesn't exist or isn’t available right now. Check the URL for any typos or choose an option below.
+      - button "Return home arrow" [ref=e36] [cursor=pointer]:
+        - text: Return home
+        - img "arrow" [ref=e37]
+      - paragraph [ref=e38]:
+        - text: Need more help?
+        - link "Contact us" [ref=e39] [cursor=pointer]:
+          - /url: https://support.indeed.com/hc

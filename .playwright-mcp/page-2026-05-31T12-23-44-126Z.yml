@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - separator [ref=e24]
+      - status [ref=e56]
+    - generic [ref=e69]:
+      - generic [ref=e73]:
+        - generic [ref=e75]:
+          - generic [ref=e77]: S
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Seeker
+            - paragraph [ref=e80]: FRESHER
+        - generic [ref=e83]:
+          - generic [ref=e84] [cursor=pointer]: Profile summary
+          - generic [ref=e85] [cursor=pointer]:
+            - text: Work experience
+            - paragraph [ref=e86]
+          - generic [ref=e87] [cursor=pointer]: Skills
+          - generic [ref=e88] [cursor=pointer]:
+            - text: Education
+            - paragraph [ref=e89]
+          - generic [ref=e90] [cursor=pointer]: Job preferences
+          - generic [ref=e91] [cursor=pointer]: Personal details
+          - generic [ref=e92] [cursor=pointer]:
+            - text: Courses & certifications
+            - paragraph [ref=e93]
+          - generic [ref=e94] [cursor=pointer]:
+            - text: Projects
+            - paragraph [ref=e95]
+          - generic [ref=e96] [cursor=pointer]:
+            - text: Awards
+            - paragraph [ref=e97]
+          - generic [ref=e98] [cursor=pointer]:
+            - text: Social links
+            - paragraph [ref=e99]
+          - generic [ref=e100] [cursor=pointer]:
+            - text: Language
+            - paragraph [ref=e101]
+      - status [ref=e171]
+      - status [ref=e240]
+      - status [ref=e312]
+  - generic [ref=e344]:
+    - list [ref=e346]:
+      - listitem [ref=e347]
+      - listitem [ref=e348]
+      - listitem [ref=e349]
+      - listitem [ref=e350]
+      - listitem [ref=e351]
+    - list [ref=e353]:
+      - listitem [ref=e354]
+      - listitem [ref=e355]
+      - listitem [ref=e356]
+      - listitem [ref=e357]
+      - listitem [ref=e358]

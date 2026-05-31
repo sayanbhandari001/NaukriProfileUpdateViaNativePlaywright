@@ -1,0 +1,24 @@
+[     316ms] [WARNING] [Elastic APM] RUM agent is inactive @ https://media.foundit.in/public/v2/seeker/_next/static/chunks/9891-aaae766fad1220d0.js:0
+[     565ms] [LOG] CleverTap [1780229995218]: CleverTap info: 545: Null value for key 'sub_channel_id' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     569ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'page_name' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     570ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'utm_campaign' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     570ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'utm_medium' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     570ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'utm_source' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     570ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'utm_content' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     570ms] [LOG] CleverTap [1780229995223]: CleverTap info: 545: Null value for key 'utm_term' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[     764ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode. @ https://media.foundit.in/public/v2/seeker/_next/static/chunks/1528-c8cb887843e83300.js:0
+[     764ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://accounts.google.com/gsi/client:84
+[     766ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode. @ https://media.foundit.in/public/v2/seeker/_next/static/chunks/1528-c8cb887843e83300.js:0
+[   23660ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://www.foundit.sg/seeker-profile/api/login:0
+[  168003ms] [WARNING] [Elastic APM] RUM agent is inactive @ https://media.foundit.in/public/v2/seeker/_next/static/chunks/9891-aaae766fad1220d0.js:0
+[  169320ms] [LOG] CleverTap [1780230163973]: CleverTap info: 545: Null value for key 'utm_campaign' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[  169320ms] [LOG] CleverTap [1780230163974]: CleverTap info: 545: Null value for key 'utm_medium' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[  169321ms] [LOG] CleverTap [1780230163974]: CleverTap info: 545: Null value for key 'utm_source' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[  169321ms] [LOG] CleverTap [1780230163974]: CleverTap info: 545: Null value for key 'utm_content' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[  169321ms] [LOG] CleverTap [1780230163975]: CleverTap info: 545: Null value for key 'utm_term' was removed @ https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js:14
+[  169493ms] [WARNING] [GPT] Slot.setTargeting is deprecated, use Slot.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#171 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js?cb=31098798:18
+[  169495ms] [WARNING] [GPT] PubAdsService.enableLazyLoad is deprecated, use googletag.setConfig({lazyLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js?cb=31098798:18
+[  170203ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 2157590861042676. @ https://connect.facebook.net/en_US/fbevents.js:181
+[  170205ms] [WARNING] [Meta Pixel] - You are sending a non-standard event 'Login'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information. @ https://connect.facebook.net/en_US/fbevents.js:181

@@ -1,0 +1,63 @@
+- generic [ref=e2]:
+  - navigation "Primary" [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - button "Skip to main content" [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Skip to main content
+          - link "Indeed Home" [ref=e11] [cursor=pointer]:
+            - /url: https://ae.indeed.com/?from=gnav-passport--passport-webapp
+            - img [ref=e13]
+          - list [ref=e15]:
+            - listitem [ref=e16]:
+              - link "Home" [ref=e18] [cursor=pointer]:
+                - /url: https://ae.indeed.com/
+            - listitem [ref=e19]:
+              - link "Company reviews" [ref=e21] [cursor=pointer]:
+                - /url: https://ae.indeed.com/companies
+            - listitem [ref=e22]:
+              - link "Find salaries" [ref=e24] [cursor=pointer]:
+                - /url: https://ae.indeed.com/career/salaries
+        - generic [ref=e25]:
+          - list:
+            - listitem
+          - link "Employers / Post Job" [ref=e30] [cursor=pointer]:
+            - /url: https://ae.indeed.com/hire?co=AE&hl=en
+      - generic [ref=e31]: Start of main content
+  - main [ref=e111]:
+    - generic [ref=e113]:
+      - img [ref=e115]
+      - generic [ref=e118]:
+        - heading "Welcome back" [level=1] [ref=e119]
+        - generic [ref=e120]: Your email is securely powered by Google.
+        - generic [ref=e122]:
+          - text: Continue as
+          - strong [ref=e123]: sayanbhandari007@gmail.com
+          - button "(not you?)" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: (not you?)
+        - button "Continue with Google" [ref=e128] [cursor=pointer]:
+          - img [ref=e129]
+          - generic [ref=e134]: Continue with Google
+        - generic [ref=e136]:
+          - text: Indeed will only use your information as described in our
+          - link "privacy policy" [ref=e137] [cursor=pointer]:
+            - /url: https://ae.indeed.com/legal?hl=en&co=AE#privacy
+          - text: . Google may ask for your permission to share with Indeed details like your name, profile picture, public profile information, and email address.
+        - link "Sign in with a code instead" [ref=e138] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e91]:
+    - generic [ref=e92]:
+      - list
+      - list [ref=e93]:
+        - listitem [ref=e94]: © 2026 Indeed
+        - listitem [ref=e95]:
+          - link "Accessibility at Indeed" [ref=e97] [cursor=pointer]:
+            - /url: https://ae.indeed.com/esg/accessibility?hl=en
+        - listitem [ref=e98]:
+          - link "Privacy Center and Ad Choices" [ref=e100] [cursor=pointer]:
+            - /url: https://hrtechprivacy.com/brands/indeed#privacypolicy
+        - listitem [ref=e101]:
+          - link "Terms" [ref=e103] [cursor=pointer]:
+            - /url: https://ae.indeed.com/legal?hl=en
+      - list:
+        - listitem

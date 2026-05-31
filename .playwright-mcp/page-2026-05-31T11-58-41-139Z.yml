@@ -1,0 +1,447 @@
+- generic [active] [ref=e1]:
+  - generic: 
+  - navigation [ref=e2]:
+    - list [ref=e3]:
+      - text: 
+      - listitem [ref=e4]:
+        - link "Bayt.com" [ref=e5] [cursor=pointer]:
+          - /url: https://www.bayt.com/
+          - img "Bayt.com" [ref=e6]
+      - listitem [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Dashboard" [ref=e10] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/myworkspace-j/
+          - listitem [ref=e11] [cursor=pointer]:
+            - generic [ref=e12]:
+              - text: Find Jobs
+              - generic [ref=e13]: 
+          - listitem [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]:
+              - text: My Profile
+              - generic [ref=e16]: 
+          - listitem [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]:
+              - text: Resources
+              - generic [ref=e19]: 
+          - listitem [ref=e20]:
+            - link "Premium" [ref=e21] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/premium/
+          - text: 
+          - listitem
+          - text: 
+          - listitem [ref=e22]:
+            - list [ref=e23]:
+              - text:  
+              - listitem [ref=e24]:
+                - generic "What’s New" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]: 
+                - text: 
+              - listitem [ref=e28]:
+                - generic "Messages" [ref=e30] [cursor=pointer]:
+                  - generic [ref=e31]: 
+                - text:  Nothing available
+              - listitem [ref=e32]:
+                - generic "Notifications" [ref=e34] [cursor=pointer]:
+                  - generic [ref=e35]: 
+                  - generic [ref=e36]: 9+
+                - text:  Nothing up to now!
+              - listitem [ref=e37]:
+                - generic "Account" [ref=e39] [cursor=pointer]:
+                  - generic [ref=e40]: 
+                - text:     
+              - listitem [ref=e41]:
+                - generic "Apps" [ref=e42] [cursor=pointer]:
+                  - generic "More on Bayt.com" [ref=e43]:
+                    - generic [ref=e44]: 
+                - text:     
+          - text: 
+  - generic [ref=e48]:
+    - generic [ref=e50]:
+      - textbox "keyword" [ref=e51]:
+        - /placeholder: Search jobs, skills, companies
+      - generic [ref=e52]: 
+    - generic [ref=e54]:
+      - combobox "select country" [ref=e55]:
+        - option "Select location" [disabled]
+        - option "All locations" [selected]
+        - option "Algeria"
+        - option "Bahrain"
+        - option "Bahrain · Manama"
+        - option "Egypt"
+        - option "Egypt · Alexandria"
+        - option "Egypt · Cairo"
+        - option "India"
+        - option "Iraq"
+        - option "Iraq · Baghdad"
+        - option "Jordan"
+        - option "Jordan · Amman"
+        - option "Kuwait"
+        - option "Kuwait · Al Kuwait"
+        - option "Lebanon"
+        - option "Lebanon · Beirut"
+        - option "Libya"
+        - option "Morocco"
+        - option "Morocco · Casablanca"
+        - option "Oman"
+        - option "Oman · Muscat"
+        - option "Pakistan"
+        - option "Qatar"
+        - option "Qatar · Doha"
+        - option "Saudi Arabia"
+        - option "Saudi Arabia · Dammam"
+        - option "Saudi Arabia · Eastern Province"
+        - option "Saudi Arabia · Jeddah"
+        - option "Saudi Arabia · Jubail"
+        - option "Saudi Arabia · Khobar"
+        - option "Saudi Arabia · Mecca"
+        - option "Saudi Arabia · Medina"
+        - option "Saudi Arabia · Riyadh"
+        - option "Syria"
+        - option "Tunisia"
+        - option "Tunisia · Tunis"
+        - option "United Arab Emirates"
+        - option "United Arab Emirates · Abu Dhabi"
+        - option "United Arab Emirates · Ajman"
+        - option "United Arab Emirates · Al Ain"
+        - option "United Arab Emirates · Dubai"
+        - option "United Arab Emirates · Fujairah"
+        - option "United Arab Emirates · Ras Al Khaimah"
+        - option "United Arab Emirates · Sharjah"
+        - option "Yemen"
+      - generic [ref=e56]: 
+    - button "Find jobs" [ref=e58] [cursor=pointer]:  Find jobs
+  - generic [ref=e59]:
+    - complementary [ref=e60]:
+      - generic [ref=e62]:
+        - text: 
+        - button "" [ref=e65] [cursor=pointer]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Sayan Bhandari
+          - paragraph [ref=e68]: Software Development Engineer in test at mastercard
+          - link "View my CV" [ref=e69] [cursor=pointer]:
+            - /url: /en/mycvs/
+      - list [ref=e72]:
+        - listitem [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: 
+            - generic [ref=e76]:
+              - paragraph [ref=e77]:
+                - text: Mobile number
+                - generic [ref=e78]: 
+              - generic [ref=e79]: +91-8806822007
+            - link "" [ref=e81] [cursor=pointer]:
+              - /url: /en/mycvs/#contact
+        - listitem [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: 
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: Email
+                - generic [ref=e88]: 
+              - text: sayanbhandari007@gmail.com
+            - link "" [ref=e90] [cursor=pointer]:
+              - /url: /en/mycvs/#contact
+      - list [ref=e93]:
+        - listitem [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: 
+            - generic [ref=e97]:
+              - paragraph [ref=e98]: Current job title
+              - text: Software Development Engineer in test
+            - link "" [ref=e100] [cursor=pointer]:
+              - /url: "javascript:"
+        - listitem [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: 
+            - generic [ref=e104]:
+              - paragraph [ref=e105]: Preferred job title
+              - text: Software Testing Analyst, Software Test Engineer, Software Testing Team Leader, Automation Engineering Adviser, Software Test Lead, Test Designer
+            - link "" [ref=e107] [cursor=pointer]:
+              - /url: "javascript:"
+      - generic [ref=e109]:
+        - heading "How active you've been this month" [level=6] [ref=e110]
+        - generic [ref=e111]:
+          - link "Search appearances 1" [ref=e113] [cursor=pointer]:
+            - /url: /en/mycvs/profile-visibility/
+            - generic [ref=e114]:
+              - paragraph [ref=e115]:
+                - text: Search
+                - text: appearances
+              - paragraph [ref=e116]: "1"
+          - generic [ref=e118]:
+            - paragraph [ref=e119]:
+              - text: Jobs
+              - text: saved
+            - paragraph [ref=e120]: "0"
+          - link "Job applications 1" [ref=e122] [cursor=pointer]:
+            - /url: /en/myworkspace-j/job-applications/view-applications/
+            - generic [ref=e123]:
+              - paragraph [ref=e124]:
+                - text: Job
+                - text: applications
+              - paragraph [ref=e125]: "1"
+      - generic [ref=e127]:
+        - heading "Get an edge over others with our Premium Services" [level=6] [ref=e128]
+        - list [ref=e129]:
+          - listitem [ref=e130]: Feature at the top of recruiter search results
+          - listitem [ref=e131]: Contact recruiters and hiring managers directly
+          - listitem [ref=e132]: Get unrestricted access to your profile visit details
+        - link "Go premium now!" [ref=e133] [cursor=pointer]:
+          - /url: /en/premium/?native_source=Premium_workspace_banner
+    - generic [ref=e134]:
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - img "Boost CV Hero" [ref=e139]
+          - generic [ref=e140]:
+            - heading "Get more views on your CV!" [level=5] [ref=e141]
+            - paragraph [ref=e142]: Boosting your CV keeps it active for 30 days, helping you stay more visible to employers.
+        - button "Boost for FREE" [ref=e144] [cursor=pointer]
+      - generic [ref=e145]:
+        - heading "Jobs feed" [level=4] [ref=e147]
+        - generic [ref=e149]: 
+        - paragraph [ref=e150]: Explore more jobs to see recommendations based on your activity.
+        - link "Explore jobs" [ref=e152] [cursor=pointer]:
+          - /url: /en/jobs/
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - link "View all" [ref=e155] [cursor=pointer]:
+            - /url: https://www.bayt.com/en/jobs/?options%5Bis_recommended_jobs%5D%5B%5D=1
+          - heading "Your top matches" [level=4] [ref=e156]
+          - paragraph [ref=e157]: Jobs we’ve found for you based on your preferred job settings and most recent experience on your Bayt CV.
+        - generic [ref=e159]:
+          - generic [ref=e161]:
+            - img "TASC Outsourcing logo" [ref=e162]
+            - generic [ref=e163]:
+              - link "Junior Software Developer" [ref=e164] [cursor=pointer]:
+                - /url: /en/india/jobs/junior-software-developer-5458600/
+                - paragraph [ref=e165]: Junior Software Developer
+              - text: TASC Outsourcing
+              - generic [ref=e166]: India
+              - generic [ref=e167]: 5 days ago
+          - generic [ref=e169]:
+            - img "Al Futtaim Group logo" [ref=e170]
+            - generic [ref=e171]:
+              - link "Senior QA/QC Engineer I Real Estate I Construction" [ref=e172] [cursor=pointer]:
+                - /url: /en/uae/jobs/senior-qa-qc-engineer-i-real-estate-i-construction-5458331/
+                - paragraph [ref=e173]: Senior QA/QC Engineer I Real Estate I Construction
+              - text: Al Futtaim Group
+              - generic [ref=e174]: Sharjah, UAE
+              - generic [ref=e175]: 6 days ago
+          - generic [ref=e177]:
+            - img "LTM logo" [ref=e178]
+            - generic [ref=e179]:
+              - link "Sitecore XM Cloud (XMC) Developer" [ref=e180] [cursor=pointer]:
+                - /url: /en/uae/jobs/sitecore-xm-cloud-xmc-developer-5456839/
+                - paragraph [ref=e181]: Sitecore XM Cloud (XMC) Developer
+              - text: LTM
+              - generic [ref=e182]: UAE
+              - generic [ref=e183]:
+                - text: 12 days ago ·
+                - generic [ref=e184]: 
+                - text: Easy Apply
+          - generic [ref=e186]:
+            - img "Ultrasafe AI logo" [ref=e187]
+            - generic [ref=e188]:
+              - link "Python Engineer - AI Systems Engineer" [ref=e189] [cursor=pointer]:
+                - /url: /en/uae/jobs/python-engineer-ai-systems-engineer-5455467/
+                - paragraph [ref=e190]: Python Engineer - AI Systems Engineer
+              - text: Ultrasafe AI
+              - generic [ref=e191]: Dubai, UAE
+              - generic [ref=e192]:
+                - text: 17 days ago ·
+                - generic [ref=e193]: 
+                - text: Easy Apply
+          - generic [ref=e195]:
+            - img "TASC Outsourcing logo" [ref=e196]
+            - generic [ref=e197]:
+              - link "Software Developer" [ref=e198] [cursor=pointer]:
+                - /url: /en/india/jobs/software-developer-5455082/
+                - paragraph [ref=e199]: Software Developer
+              - text: TASC Outsourcing
+              - generic [ref=e200]: India
+              - generic [ref=e201]: 19 days ago
+          - generic [ref=e203]:
+            - img "Global Management Solutions (GMS) logo" [ref=e204]
+            - generic [ref=e205]:
+              - link "Automotive Diagnostics - Electric Vehicle (EV) Software Programmer" [ref=e206] [cursor=pointer]:
+                - /url: /en/uae/jobs/automotive-diagnostics-electric-vehicle-ev-software-programmer-5454398/
+                - paragraph [ref=e207]: Automotive Diagnostics - Electric Vehicle (EV) Software Programmer
+              - text: Global Management Solutions (GMS)
+              - generic [ref=e208]: Dubai, UAE
+              - generic [ref=e209]:
+                - text: 22 days ago ·
+                - generic [ref=e210]: 
+                - text: Easy Apply
+  - generic: 
+  - contentinfo [ref=e211]:
+    - generic [ref=e212]:
+      - generic [ref=e214]:
+        - generic [ref=e215]: Find Jobs
+        - list [ref=e216]:
+          - listitem [ref=e217]:
+            - link "Jobs in Abu Dhabi" [ref=e218] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-abu-dhabi/
+          - listitem [ref=e219]:
+            - link "Jobs in Dubai" [ref=e220] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/jobs-in-dubai/
+          - listitem [ref=e221]:
+            - link "Jobs in Algeria" [ref=e222] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/algeria/jobs/
+          - listitem [ref=e223]:
+            - link "Jobs in Bahrain" [ref=e224] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/bahrain/jobs/
+          - listitem [ref=e225]:
+            - link "Jobs in Egypt" [ref=e226] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/egypt/jobs/
+          - listitem [ref=e227]:
+            - link "Jobs in India" [ref=e228] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/india/jobs/
+          - listitem [ref=e229]:
+            - link "Jobs in Iraq" [ref=e230] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/iraq/jobs/
+          - listitem [ref=e231]:
+            - link "Jobs in Jordan" [ref=e232] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/jordan/jobs/
+          - listitem [ref=e233]:
+            - link "Jobs in Kuwait" [ref=e234] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/kuwait/jobs/
+          - listitem [ref=e235]:
+            - link "Jobs in Lebanon" [ref=e236] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/lebanon/jobs/
+          - listitem [ref=e237]:
+            - link "Jobs in Libya" [ref=e238] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/libya/jobs/
+          - listitem [ref=e239]:
+            - link "Jobs in Morocco" [ref=e240] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/morocco/jobs/
+          - listitem [ref=e241]:
+            - link "Jobs in Oman" [ref=e242] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/oman/jobs/
+          - listitem [ref=e243]:
+            - link "Jobs in Pakistan" [ref=e244] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/pakistan/jobs/
+          - listitem [ref=e245]:
+            - link "Jobs in Qatar" [ref=e246] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/qatar/jobs/
+          - listitem [ref=e247]:
+            - link "Jobs in Saudi Arabia" [ref=e248] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/saudi-arabia/jobs/
+          - listitem [ref=e249]:
+            - link "Jobs in Tunisia" [ref=e250] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/tunisia/jobs/
+          - listitem [ref=e251]:
+            - link "Jobs in UAE" [ref=e252] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/uae/jobs/
+          - listitem [ref=e253]:
+            - link "Jobs in Yemen" [ref=e254] [cursor=pointer]:
+              - /url: https://www.bayt.com/en/yemen/jobs/
+      - generic [ref=e255]:
+        - generic [ref=e256]:
+          - generic [ref=e257]: About Bayt.com
+          - generic [ref=e258]: Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.
+          - list [ref=e259]:
+            - listitem [ref=e260]:
+              - link "Facebook" [ref=e261] [cursor=pointer]:
+                - /url: https://www.facebook.com/Baytcom
+                - text: 
+            - listitem [ref=e262]:
+              - link "Twitter" [ref=e263] [cursor=pointer]:
+                - /url: https://x.com/Baytcom
+                - text: 
+            - listitem [ref=e264]:
+              - link "LinkedIn" [ref=e265] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/bayt.com
+                - text: 
+            - listitem [ref=e266]:
+              - link "YouTube" [ref=e267] [cursor=pointer]:
+                - /url: https://www.youtube.com/Baytcom
+                - text: 
+            - listitem [ref=e268]:
+              - link "Instagram" [ref=e269] [cursor=pointer]:
+                - /url: https://www.instagram.com/baytcom/
+                - text: 
+            - listitem [ref=e270]:
+              - link "TikTok" [ref=e271] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@bayt.com
+                - text: 
+            - listitem [ref=e272]:
+              - link "Spotify" [ref=e273] [cursor=pointer]:
+                - /url: https://open.spotify.com/show/7sTLIVz8cTQBgCqSdxrZLb
+                - text: 
+            - listitem [ref=e274]:
+              - link "Apple Podcasts" [ref=e275] [cursor=pointer]:
+                - /url: https://podcasts.apple.com/ae/podcast/bayt-cast-big-ideas-bigger-opportunities/id1812642116
+                - text: 
+            - listitem [ref=e276]:
+              - link "Anghami" [ref=e277] [cursor=pointer]:
+                - /url: https://open.anghami.com/6gJH51K3vWb
+                - text: 
+        - generic [ref=e278]:
+          - generic [ref=e279]: Company
+          - list [ref=e280]:
+            - listitem [ref=e281]:
+              - link "About Us" [ref=e282] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/
+            - listitem [ref=e283]:
+              - link "Contact Us" [ref=e284] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/contact-us/
+            - listitem [ref=e285]:
+              - link "Careers" [ref=e286] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/international/jobs/bayt.com-jobs/?filters%5Bgid_pid%5D%5B0%5D=1480348-0
+            - listitem [ref=e287]:
+              - link "Press Corner" [ref=e288] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/about/press/
+            - listitem [ref=e289]:
+              - link "Advertise With Us" [ref=e290] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/advertise/
+        - generic [ref=e291]:
+          - generic [ref=e292]: Quick Links
+          - list [ref=e293]:
+            - listitem [ref=e294]:
+              - link "Blog" [ref=e295] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/blog/
+            - listitem [ref=e296]:
+              - link "Podcasts" [ref=e297] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/podcasts/
+        - generic [ref=e298]:
+          - generic [ref=e299]: Get the Bayt App
+          - generic [ref=e300]:
+            - link "Get it on Google Play" [ref=e301] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.bayt
+              - img "Get it on Google Play" [ref=e302]
+            - link "Download on the App Store" [ref=e303] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/bayt-com-job-search/id510893233
+              - img "Download on the App Store" [ref=e304]
+          - generic [ref=e305]:
+            - img "Bayt App QR Code" [ref=e306]
+            - generic [ref=e307]:
+              - generic [ref=e308]: Scan the QR code to get the app
+              - img "arrow pointer" [ref=e309]
+      - separator [ref=e310]
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - list [ref=e313]:
+            - listitem [ref=e314]:
+              - link "Privacy Policy" [ref=e315] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/privacy-statement/
+            - listitem [ref=e316]:
+              - link "Cookie Policy" [ref=e317] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/cookie-policy/
+            - listitem [ref=e318]: Cookie Settings
+            - listitem [ref=e319]:
+              - link "Terms of Use" [ref=e320] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/terms/
+            - listitem [ref=e321]:
+              - link "Trust Center " [ref=e322] [cursor=pointer]:
+                - /url: https://trust.bayt.com/
+                - text: Trust Center
+                - generic [ref=e323]: 
+            - listitem [ref=e324]:
+              - link "Stay Safe" [ref=e325] [cursor=pointer]:
+                - /url: https://www.bayt.com/en/pages/security-message/
+          - generic [ref=e326]: Copyright © 2000-2026 Bayt.com. All rights reserved.
+        - link " العربية" [ref=e328] [cursor=pointer]:
+          - /url: /ar/myworkspace-j/
+          - generic [ref=e329]: 
+          - text: العربية
