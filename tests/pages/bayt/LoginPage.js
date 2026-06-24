@@ -7,17 +7,16 @@ class BaytLoginPage {
   }
 
   async goto() {
-    await this.page.goto('https://www.bayt.com/en/login/', { waitUntil: 'networkidle' });
+    await this.page.goto('https://www.bayt.com/en/login/', { waitUntil: 'domcontentloaded' });
+    await this.emailField.waitFor({ state: 'visible' });
   }
 
   async login(email, password) {
     await this.goto();
     await this.emailField.fill(email);
     await this.passwordField.fill(password);
-    await Promise.all([
-      this.page.waitForSelector('input#LoginForm_username', { state: 'detached' }),
-      this.loginButton.click(),
-    ]);
+    await this.loginButton.click();
+    await this.page.waitForURL(url => !url.toString().includes('/login'), { timeout: 30000 });
   }
 }
 

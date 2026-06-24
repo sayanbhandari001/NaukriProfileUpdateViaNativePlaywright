@@ -7,9 +7,8 @@ class BaytLogoutPage {
   }
 
   async logout() {
-    await this.page.goto('https://www.bayt.com/en/user-login/user-login/logout-js/', { waitUntil: 'load' });
-    await this.page.waitForLoadState('networkidle');
-    await expect(this.loggedOutHeading).toBeVisible();
+    await this.page.goto('https://www.bayt.com/en/user-login/user-login/logout-js/', { waitUntil: 'domcontentloaded' });
+    await expect(this.loggedOutHeading).toBeVisible({ timeout: 15000 });
   }
 }
 

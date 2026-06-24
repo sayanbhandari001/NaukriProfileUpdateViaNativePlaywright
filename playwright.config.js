@@ -6,14 +6,14 @@ module.exports = defineConfig({
   timeout: 60000,
   // Use Playwright defaults for test and expect timeouts; avoid overriding here
   fullyParallel: true,
-  workers: 2,
+  workers: 4,
   retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     headless: process.env.CI ? true : false,  // Headless in CI, headed locally
     ignoreHTTPSErrors: true,
     // Rely on Playwright's default action/navigation timeouts for robustness
-    viewport: { width: 1360, height: 768 },
+    viewport: { width: 1366, height: 786 },
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     launchOptions: {
       args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']
@@ -22,6 +22,19 @@ module.exports = defineConfig({
     video: 'retry-with-video'
   },
   projects: [
+    // Regional grouping projects
+    {
+      name: 'india',
+      grep: /@india/,
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'international',
+      grep: /@international/,
+      use: { browserName: 'chromium' },
+    },
+    
+    // Priority-based projects
     {
       name: 'priority-1',
       grep: /@priority-1/,
@@ -40,21 +53,15 @@ module.exports = defineConfig({
       use: { browserName: 'chromium' },
     },
     {
-      name: 'priority-6',
-      grep: /@priority-6/,
+      name: 'priority-4',
+      grep: /@priority-4/,
       dependencies: ['priority-3'],
       use: { browserName: 'chromium' },
     },
     {
-      name: 'priority-7',
-      grep: /@priority-7/,
-      dependencies: ['priority-6'],
-      use: { browserName: 'chromium' },
-    },
-    {
-      name: 'priority-8',
-      grep: /@priority-8/,
-      dependencies: ['priority-7'],
+      name: 'priority-5',
+      grep: /@priority-5/,
+      dependencies: ['priority-4'],
       use: { browserName: 'chromium' },
     },
   ]

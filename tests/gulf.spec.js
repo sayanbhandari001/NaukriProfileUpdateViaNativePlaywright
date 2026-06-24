@@ -8,7 +8,7 @@ const gulfAccount = {
   priority: 1,
 };
 
-test.describe('@priority-1 Gulf Accounts', () => {
+test.describe('@international @priority-1 Gulf Accounts', () => {
   test(`[Priority ${gulfAccount.priority}] ${gulfAccount.label}`, async ({ gulfApp }) => {
     const email = requireEnvValue(gulfAccount.emailKey);
     const passwordBase64 = requireEnvValue(gulfAccount.passwordKey);

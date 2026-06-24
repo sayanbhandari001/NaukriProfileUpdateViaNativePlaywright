@@ -38,7 +38,7 @@ const wifeAccount = {
 
 const buildAlternateHeadline = (headline) => `${headline}.`;
 
-test.describe('@priority-2 India Accounts', () => {
+test.describe('@india @priority-2 India Accounts', () => {
   for (const account of accounts) {
     test(`[Priority ${account.priority}] ${account.label}`, async ({ naukriApp }) => {
       const email = requireEnvValue(account.emailKey);
@@ -51,7 +51,7 @@ test.describe('@priority-2 India Accounts', () => {
   }
 });
 
-test.describe('@priority-3 Wife Account', () => {
+test.describe('@india @priority-3 Wife Account', () => {
   test(`[Priority ${wifeAccount.priority}] ${wifeAccount.label}`, async ({ naukriApp }) => {
     const email = requireEnvValue(wifeAccount.emailKey);
     const passwordBase64 = requireEnvValue(wifeAccount.passwordKey);

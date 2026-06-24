@@ -15,10 +15,8 @@ class FounditLoginPage {
     await this.goto();
     await this.emailField.fill(email);
     await this.passwordField.fill(password);
-    await Promise.all([
-      this.page.waitForSelector('input#userName', { state: 'detached' }),
-      this.loginButton.click(),
-    ]);
+    await this.loginButton.click();
+    await this.page.waitForURL(url => !url.toString().includes('/login'), { timeout: 30000 });
   }
 }
 

@@ -4,11 +4,11 @@ const founditAccount = {
   label: 'Foundit profile account',
   emailKey: 'FOUNDIT_EMAIL',
   passwordKey: 'FOUNDIT_PASSWORD',
-  expectedSummary: '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing.',
-  priority: 7,
+  expectedSummary: '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing',
+  priority: 5,
 };
 
-test.describe('@priority-7 Foundit Accounts', () => {
+test.describe('@international @priority-5 Foundit Accounts', () => {
   test(`[Priority ${founditAccount.priority}] ${founditAccount.label}`, async ({ founditApp }) => {
     const email = requireEnvValue(founditAccount.emailKey);
     const passwordBase64 = requireEnvValue(founditAccount.passwordKey);
