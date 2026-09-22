@@ -10,7 +10,9 @@ module.exports = defineConfig({
   retries: 1,
   reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
-    headless: process.env.CI ? true : false,  // Headless in CI, headed locally
+    // Job portals block headless browsers ("Access Denied"), so run headed by default.
+    // CI provides a virtual display via xvfb-run. Set HEADLESS=true to opt in to headless.
+    headless: process.env.HEADLESS === 'true',
     ignoreHTTPSErrors: true,
     // Rely on Playwright's default action/navigation timeouts for robustness
     viewport: { width: 1366, height: 786 },
@@ -62,6 +64,12 @@ module.exports = defineConfig({
       name: 'priority-5',
       grep: /@priority-5/,
       dependencies: ['priority-4'],
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'priority-6',
+      grep: /@priority-6/,
+      dependencies: ['priority-5'],
       use: { browserName: 'chromium' },
     },
   ]

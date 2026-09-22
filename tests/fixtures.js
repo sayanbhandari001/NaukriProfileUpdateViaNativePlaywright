@@ -12,6 +12,9 @@ const { BaytLogoutPage } = require('./pages/bayt/LogoutPage');
 const { FounditLoginPage } = require('./pages/foundit/LoginPage');
 const { FounditProfilePage } = require('./pages/foundit/ProfilePage');
 const { FounditLogoutPage } = require('./pages/foundit/LogoutPage');
+const { GulfTalentLoginPage } = require('./pages/gulftalent/LoginPage');
+const { GulfTalentProfilePage } = require('./pages/gulftalent/ProfilePage');
+const { GulfTalentLogoutPage } = require('./pages/gulftalent/LogoutPage');
 
 const test = base.extend({
   naukriApp: async ({ page }, use) => {
@@ -72,6 +75,24 @@ const test = base.extend({
     const loginPage = new FounditLoginPage(page);
     const profilePage = new FounditProfilePage(page);
     const logoutPage = new FounditLogoutPage(page);
+
+    await use({
+      loginPage,
+      profilePage,
+      logoutPage,
+      login: async (email, password) => {
+        await loginPage.login(email, password);
+      },
+      logout: async () => {
+        await logoutPage.logout();
+      },
+    });
+  },
+
+  gulfTalentApp: async ({ page }, use) => {
+    const loginPage = new GulfTalentLoginPage(page);
+    const profilePage = new GulfTalentProfilePage(page);
+    const logoutPage = new GulfTalentLogoutPage(page);
 
     await use({
       loginPage,

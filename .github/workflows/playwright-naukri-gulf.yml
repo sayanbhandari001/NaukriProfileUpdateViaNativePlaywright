@@ -1,80 +1,76 @@
 name: Naukri & Gulf Profile Update
 
 on:
-  push:
-    branches: [main, master, develop]
-  pull_request:
-    branches: [main, master, develop]
   schedule:
-    - cron: '0 2 * * *'
+    # GitHub cron is UTC. IST = UTC+5:30 → 10:30, 12:30, 15:30 IST, Monday–Saturday
+    - cron: '0 5,7,10 * * 1-6'
+  workflow_dispatch:
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
 
 jobs:
   playwright-tests:
     name: Run Playwright Tests
-    timeout-minutes: 60        # 120 is excessive for 5 tests
+    timeout-minutes: 30
     runs-on: ubuntu-latest
+
+    env:
+      GULF_NAUKRI_EMAIL: ${{ secrets.GULF_NAUKRI_EMAIL }}
+      GULF_NAUKRI_PASSWORD: ${{ secrets.GULF_NAUKRI_PASSWORD }}
+      NAUKRI_USER_1_EMAIL: ${{ secrets.NAUKRI_USER_1_EMAIL }}
+      NAUKRI_USER_1_PASSWORD: ${{ secrets.NAUKRI_USER_1_PASSWORD }}
+      NAUKRI_USER_2_EMAIL: ${{ secrets.NAUKRI_USER_2_EMAIL }}
+      NAUKRI_USER_2_PASSWORD: ${{ secrets.NAUKRI_USER_2_PASSWORD }}
+      NAUKRI_USER_3_EMAIL: ${{ secrets.NAUKRI_USER_3_EMAIL }}
+      NAUKRI_USER_3_PASSWORD: ${{ secrets.NAUKRI_USER_3_PASSWORD }}
+      NAUKRI_WIFE_EMAIL: ${{ secrets.NAUKRI_WIFE_EMAIL }}
+      NAUKRI_WIFE_PASSWORD: ${{ secrets.NAUKRI_WIFE_PASSWORD }}
+      BAYT_EMAIL: ${{ secrets.BAYT_EMAIL }}
+      BAYT_PASSWORD: ${{ secrets.BAYT_PASSWORD }}
+      FOUNDIT_EMAIL: ${{ secrets.FOUNDIT_EMAIL }}
+      FOUNDIT_PASSWORD: ${{ secrets.FOUNDIT_PASSWORD }}
+      GULFTALENT_EMAIL: ${{ secrets.GULFTALENT_EMAIL }}
+      GULFTALENT_PASSWORD: ${{ secrets.GULFTALENT_PASSWORD }}
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
-
-      - name: Cache npm dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          node-version: '22.x'
+          cache: npm
 
       - name: Cache Playwright browsers
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - run: npm ci
-      - run: npx playwright install --with-deps
+      - run: npx playwright install --with-deps chromium
       - run: sudo apt-get install -y xvfb
 
-      - name: Debug - Check if secrets are available
-        env:
-          GULF_NAUKRI_EMAIL: ${{ secrets.GULF_NAUKRI_EMAIL }}
-          GULF_NAUKRI_PASSWORD: ${{ secrets.GULF_NAUKRI_PASSWORD }}
-          NAUKRI_USER_1_EMAIL: ${{ secrets.NAUKRI_USER_1_EMAIL }}
-          NAUKRI_USER_1_PASSWORD: ${{ secrets.NAUKRI_USER_1_PASSWORD }}
-          NAUKRI_USER_2_EMAIL: ${{ secrets.NAUKRI_USER_2_EMAIL }}
-          NAUKRI_USER_2_PASSWORD: ${{ secrets.NAUKRI_USER_2_PASSWORD }}
-          NAUKRI_USER_3_EMAIL: ${{ secrets.NAUKRI_USER_3_EMAIL }}
-          NAUKRI_USER_3_PASSWORD: ${{ secrets.NAUKRI_USER_3_PASSWORD }}
-          NAUKRI_WIFE_EMAIL: ${{ secrets.NAUKRI_WIFE_EMAIL }}
-          NAUKRI_WIFE_PASSWORD: ${{ secrets.NAUKRI_WIFE_PASSWORD }}
+      - name: Check secrets are available
         run: |
-          echo "Checking environment variables..."
-          [ -n "$GULF_NAUKRI_EMAIL" ] && echo "✓ GULF_NAUKRI_EMAIL is set" || echo "✗ GULF_NAUKRI_EMAIL is NOT set"
-          [ -n "$GULF_NAUKRI_PASSWORD" ] && echo "✓ GULF_NAUKRI_PASSWORD is set" || echo "✗ GULF_NAUKRI_PASSWORD is NOT set"
-          [ -n "$NAUKRI_USER_1_EMAIL" ] && echo "✓ NAUKRI_USER_1_EMAIL is set" || echo "✗ NAUKRI_USER_1_EMAIL is NOT set"
-          [ -n "$NAUKRI_USER_1_PASSWORD" ] && echo "✓ NAUKRI_USER_1_PASSWORD is set" || echo "✗ NAUKRI_USER_1_PASSWORD is NOT set"
-          [ -n "$NAUKRI_USER_2_EMAIL" ] && echo "✓ NAUKRI_USER_2_EMAIL is set" || echo "✗ NAUKRI_USER_2_EMAIL is NOT set"
-          [ -n "$NAUKRI_USER_2_PASSWORD" ] && echo "✓ NAUKRI_USER_2_PASSWORD is set" || echo "✗ NAUKRI_USER_2_PASSWORD is NOT set"
-          [ -n "$NAUKRI_USER_3_EMAIL" ] && echo "✓ NAUKRI_USER_3_EMAIL is set" || echo "✗ NAUKRI_USER_3_EMAIL is NOT set"
-          [ -n "$NAUKRI_USER_3_PASSWORD" ] && echo "✓ NAUKRI_USER_3_PASSWORD is set" || echo "✗ NAUKRI_USER_3_PASSWORD is NOT set"
-          [ -n "$NAUKRI_WIFE_EMAIL" ] && echo "✓ NAUKRI_WIFE_EMAIL is set" || echo "✗ NAUKRI_WIFE_EMAIL is NOT set"
-          [ -n "$NAUKRI_WIFE_PASSWORD" ] && echo "✓ NAUKRI_WIFE_PASSWORD is set" || echo "✗ NAUKRI_WIFE_PASSWORD is NOT set"
+          missing=0
+          for name in GULF_NAUKRI_EMAIL GULF_NAUKRI_PASSWORD \
+                      NAUKRI_USER_1_EMAIL NAUKRI_USER_1_PASSWORD \
+                      NAUKRI_USER_2_EMAIL NAUKRI_USER_2_PASSWORD \
+                      NAUKRI_USER_3_EMAIL NAUKRI_USER_3_PASSWORD \
+                      NAUKRI_WIFE_EMAIL NAUKRI_WIFE_PASSWORD \
+                      BAYT_EMAIL BAYT_PASSWORD \
+                      FOUNDIT_EMAIL FOUNDIT_PASSWORD \
+                      GULFTALENT_EMAIL GULFTALENT_PASSWORD; do
+            if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "✗ $name is NOT set"; missing=1; fi
+          done
+          exit $missing
 
+      # Headed under a virtual display — the portals block headless Chromium.
+      # india + international cover every test exactly once (priority-* projects would re-run them).
       - name: Run tests
-        env:
-          GULF_NAUKRI_EMAIL: ${{ secrets.GULF_NAUKRI_EMAIL }}
-          GULF_NAUKRI_PASSWORD: ${{ secrets.GULF_NAUKRI_PASSWORD }}
-          NAUKRI_USER_1_EMAIL: ${{ secrets.NAUKRI_USER_1_EMAIL }}
-          NAUKRI_USER_1_PASSWORD: ${{ secrets.NAUKRI_USER_1_PASSWORD }}
-          NAUKRI_USER_2_EMAIL: ${{ secrets.NAUKRI_USER_2_EMAIL }}
-          NAUKRI_USER_2_PASSWORD: ${{ secrets.NAUKRI_USER_2_PASSWORD }}
-          NAUKRI_USER_3_EMAIL: ${{ secrets.NAUKRI_USER_3_EMAIL }}
-          NAUKRI_USER_3_PASSWORD: ${{ secrets.NAUKRI_USER_3_PASSWORD }}
-          NAUKRI_WIFE_EMAIL: ${{ secrets.NAUKRI_WIFE_EMAIL }}
-          NAUKRI_WIFE_PASSWORD: ${{ secrets.NAUKRI_WIFE_PASSWORD }}
-        run: npx playwright test
+        run: xvfb-run --auto-servernum npx playwright test --project=india --project=international
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
