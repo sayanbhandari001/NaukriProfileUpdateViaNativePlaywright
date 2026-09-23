@@ -49,11 +49,38 @@ This repository contains an automation project that updates a Naukri.com profile
 
 ## Usage
 
-- Run the main script (example):
+### Run everything
 
-  npm run update-profile
+Every spec carries both a region tag (`@india` / `@international`) and a priority tag
+(`@priority-1` ... `@priority-7`), and `playwright.config.js` defines a project for each.
+A bare `npx playwright test` therefore runs each test **twice** — once under its region
+project and once under its priority project.
 
-- For headless or headed runs, toggle the Playwright launch options in the script.
+To run all portals exactly once, in priority order, use the dependency chain:
+
+```powershell
+npx playwright test --project=priority-7
+```
+
+`priority-7` depends on `priority-6`, which depends on `priority-5`, and so on, so
+Playwright pulls in every project and executes them sequentially:
+
+gulf -> naukri -> wife -> bayt -> foundit -> gulftalent -> indeed
+
+### Other useful commands
+
+```powershell
+npx playwright test --project=priority-7 --headed          # watch the run (headed is the default)
+$env:HEADLESS="true"; npx playwright test --project=priority-7   # headless run
+npx playwright test --project=india                        # India portals only
+npx playwright test --project=international                # international portals only
+npx playwright test tests/indeed.spec.js                   # a single spec
+npx playwright show-report                                 # open the HTML report
+```
+
+Runs are headed by default because the job portals block headless browsers
+("Access Denied"); set `HEADLESS=true` to opt in to headless. CI supplies a virtual
+display via `xvfb-run`.
 
 ## Project Structure
 

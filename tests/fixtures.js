@@ -15,6 +15,9 @@ const { FounditLogoutPage } = require('./pages/foundit/LogoutPage');
 const { GulfTalentLoginPage } = require('./pages/gulftalent/LoginPage');
 const { GulfTalentProfilePage } = require('./pages/gulftalent/ProfilePage');
 const { GulfTalentLogoutPage } = require('./pages/gulftalent/LogoutPage');
+const { IndeedLoginPage } = require('./pages/indeed/LoginPage');
+const { IndeedProfilePage } = require('./pages/indeed/ProfilePage');
+const { IndeedLogoutPage } = require('./pages/indeed/LogoutPage');
 
 const test = base.extend({
   naukriApp: async ({ page }, use) => {
@@ -93,6 +96,24 @@ const test = base.extend({
     const loginPage = new GulfTalentLoginPage(page);
     const profilePage = new GulfTalentProfilePage(page);
     const logoutPage = new GulfTalentLogoutPage(page);
+
+    await use({
+      loginPage,
+      profilePage,
+      logoutPage,
+      login: async (email, password) => {
+        await loginPage.login(email, password);
+      },
+      logout: async () => {
+        await logoutPage.logout();
+      },
+    });
+  },
+
+  indeedApp: async ({ page }, use) => {
+    const loginPage = new IndeedLoginPage(page);
+    const profilePage = new IndeedProfilePage(page);
+    const logoutPage = new IndeedLogoutPage(page);
 
     await use({
       loginPage,

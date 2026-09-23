@@ -33,6 +33,8 @@ jobs:
       FOUNDIT_PASSWORD: ${{ secrets.FOUNDIT_PASSWORD }}
       GULFTALENT_EMAIL: ${{ secrets.GULFTALENT_EMAIL }}
       GULFTALENT_PASSWORD: ${{ secrets.GULFTALENT_PASSWORD }}
+      INDEED_EMAIL: ${{ secrets.INDEED_EMAIL }}
+      INDEED_PASSWORD: ${{ secrets.INDEED_PASSWORD }}
 
     steps:
       - uses: actions/checkout@v4
@@ -64,6 +66,10 @@ jobs:
                       FOUNDIT_EMAIL FOUNDIT_PASSWORD \
                       GULFTALENT_EMAIL GULFTALENT_PASSWORD; do
             if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "✗ $name is NOT set"; missing=1; fi
+          done
+          # Indeed is optional — the spec skips itself when the credentials are absent
+          for name in INDEED_EMAIL INDEED_PASSWORD; do
+            if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "- $name is not set (Indeed test will be skipped)"; fi
           done
           exit $missing
 

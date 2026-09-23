@@ -4,7 +4,7 @@ const gulfTalentAccount = {
   label: 'GulfTalent profile account',
   emailKey: 'GULFTALENT_EMAIL',
   passwordKey: 'GULFTALENT_PASSWORD',
-  expectedHeadline: '8 Years Experienced Senior QA Automation Tester, Selenium, Java, Playwright',
+  expectedHeadline: 'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
   priority: 6,
 };
 

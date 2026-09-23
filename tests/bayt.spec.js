@@ -4,7 +4,7 @@ const baytAccount = {
   label: 'Bayt profile account',
   emailKey: 'BAYT_EMAIL',
   passwordKey: 'BAYT_PASSWORD',
-  expectedObjectives: 'Experienced Senior Test Analyst proficient in Selenium, Java, SQL, and CICD, with skills in TestNG, Maven, GIT, Cucumber, Jenkins, and PowerBI. Expert in Agile & Waterfall SDLC, Performance Testing, and Test Automation Scripting',
+  expectedObjectives: 'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
   priority: 4,
 };
 

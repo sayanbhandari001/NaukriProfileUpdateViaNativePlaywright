@@ -6,7 +6,7 @@ const accounts = [
     emailKey: 'NAUKRI_USER_1_EMAIL',
     passwordKey: 'NAUKRI_USER_1_PASSWORD',
     targetHeadline:
-      '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing',
+      'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
     priority: 2,
   },
   {
@@ -14,7 +14,7 @@ const accounts = [
     emailKey: 'NAUKRI_USER_2_EMAIL',
     passwordKey: 'NAUKRI_USER_2_PASSWORD',
     targetHeadline:
-      '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing',
+      'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
     priority: 2,
   },
   {
@@ -22,7 +22,7 @@ const accounts = [
     emailKey: 'NAUKRI_USER_3_EMAIL',
     passwordKey: 'NAUKRI_USER_3_PASSWORD',
     targetHeadline:
-      '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing',
+      'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
     priority: 2,
   },
 ];

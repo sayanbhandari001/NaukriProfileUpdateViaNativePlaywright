@@ -72,5 +72,11 @@ module.exports = defineConfig({
       dependencies: ['priority-5'],
       use: { browserName: 'chromium' },
     },
+    {
+      name: 'priority-7',
+      grep: /@priority-7/,
+      dependencies: ['priority-6'],
+      use: { browserName: 'chromium' },
+    },
   ]
 });

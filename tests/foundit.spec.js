@@ -4,7 +4,7 @@ const founditAccount = {
   label: 'Foundit profile account',
   emailKey: 'FOUNDIT_EMAIL',
   passwordKey: 'FOUNDIT_PASSWORD',
-  expectedSummary: '8 Years Experienced Senior QA Automation Tester| Selenium | Java | Playwright | PostMan | Rest Assured | SQL | TestNG | Cucumber BDD | Maven | Jenkins | Git | CI/CD | Framework Development | Functional & Regression Testing | Agile | API Testing',
+  expectedSummary: 'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
   priority: 5,
 };
 
