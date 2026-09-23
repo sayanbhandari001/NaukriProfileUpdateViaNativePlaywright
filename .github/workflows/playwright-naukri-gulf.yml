@@ -1,9 +1,9 @@
 name: Naukri & Gulf Profile Update
 
 on:
-  schedule:
-    # GitHub cron is UTC. IST = UTC+5:30 → 10:30, 12:30, 15:30 IST, Monday–Saturday
-    - cron: '0 5,7,10 * * 1-6'
+  # No schedule here: Naukri and Bayt reject GitHub's datacenter IPs, so this workflow
+  # can never be fully green. The scheduled run lives in playwright-self-hosted.yml.
+  # Kept for manual dispatch when you want a hosted-runner sanity check.
   workflow_dispatch:
 
 concurrency:
