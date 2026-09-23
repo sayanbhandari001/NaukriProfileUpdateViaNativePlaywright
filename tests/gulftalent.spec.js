@@ -4,7 +4,7 @@ const gulfTalentAccount = {
   label: 'GulfTalent profile account',
   emailKey: 'GULFTALENT_EMAIL',
   passwordKey: 'GULFTALENT_PASSWORD',
-  expectedHeadline: 'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
+  expectedHeadline: 'Senior SDET/Test Lead, 9+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks), currently leading QA for AI/Voice products at Assigncorp. Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks. Open to Test Lead/SDET roles across the UAE, relocating to Dubai/Abu Dhabi.',
   priority: 6,
 };
 

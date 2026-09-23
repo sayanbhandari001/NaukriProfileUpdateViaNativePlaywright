@@ -4,7 +4,7 @@ const gulfAccount = {
   label: 'Gulf profile account',
   emailKey: 'GULF_NAUKRI_EMAIL',
   passwordKey: 'GULF_NAUKRI_PASSWORD',
-  expectedHeadline: 'Senior SDET/Test Lead, 8+ yrs in BFSI & Payments (ISO 8583, card auth, clearing, settlement, chargebacks). Expert: Playwright, Selenium-Java, RestAssured, Cucumber BDD, jPOS, Jenkins, GitHub Actions, Allure, API Testing & Automation Frameworks',
+  expectedHeadline: 'Senior SDET/Test Lead | 9+ yrs BFSI & Payments | Test Automation, CI/CD, Dubai',
   priority: 1,
 };
 
