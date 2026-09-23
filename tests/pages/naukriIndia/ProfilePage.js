@@ -10,7 +10,17 @@ class NaukriProfilePage {
   }
 
   async goto() {
-    await this.page.goto('https://www.naukri.com/mnjuser/profile?id=&altresid', { waitUntil: 'load' });
+    const profileUrl = 'https://www.naukri.com/mnjuser/profile?id=&altresid';
+    await this.page.goto(profileUrl, { waitUntil: 'load' });
+    // A dropped session silently redirects to the login form — retry once before failing,
+    // so a slow session handshake does not look like a broken selector.
+    if (await this.page.locator('input#usernameField').isVisible().catch(() => false)) {
+      await this.page.waitForTimeout(5000);
+      await this.page.goto(profileUrl, { waitUntil: 'load' });
+      if (await this.page.locator('input#usernameField').isVisible().catch(() => false)) {
+        throw new Error(`Naukri dropped the session: ${profileUrl} redirected back to the login form.`);
+      }
+    }
     await this.page.getByText('Resume headline').first().waitFor({ state: 'visible' });
   }
 
