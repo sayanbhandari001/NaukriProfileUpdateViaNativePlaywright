@@ -52,6 +52,9 @@ test.describe('@india @priority-2 India Accounts', () => {
 });
 
 test.describe('@india @priority-3 Wife Account', () => {
+  // Not required for now — kept for future runs. Set RUN_WIFE_ACCOUNT=true to re-enable.
+  test.skip(process.env.RUN_WIFE_ACCOUNT !== 'true', 'Wife account run is disabled');
+
   test(`[Priority ${wifeAccount.priority}] ${wifeAccount.label}`, async ({ naukriApp }) => {
     const email = requireEnvValue(wifeAccount.emailKey);
     const passwordBase64 = requireEnvValue(wifeAccount.passwordKey);
