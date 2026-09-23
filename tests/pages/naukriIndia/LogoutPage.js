@@ -5,7 +5,7 @@ class NaukriLogoutPage {
     this.page = page;
     this.profileIcon = page.getByRole('img', { name: 'naukri user profile img' });
     this.logoutButton = page.getByText('Logout').first();
-    this.profileMenuButton = page.locator('div').filter({ hasText: /^2$/ }).nth(1);
+    this.loginLink = page.getByRole('link', { name: 'Login', exact: true });
     this.closeUpdatedDrawer = page.locator('div.lightbox.profileEditDrawer.profileUpdatedProLayer.model_open.flipOpen span:has-text("CrossLayer")');
   }
 
@@ -15,18 +15,17 @@ class NaukriLogoutPage {
     }
   }
 
-  async openMenu() {
-    if (await this.profileIcon.isVisible()) {
-      await this.profileIcon.click();
-    } else {
-      await this.profileMenuButton.click();
-    }
-  }
-
   async logout() {
     await this.closeDrawerIfVisible();
-    await this.openMenu();
-    await this.logoutButton.click();
+    // The profile menu is not always rendered (layout varies by account), so fall back
+    // to the logout URL rather than guessing at the header markup.
+    try {
+      await this.profileIcon.click({ timeout: 10000 });
+      await this.logoutButton.click({ timeout: 10000 });
+    } catch {
+      await this.page.goto('https://www.naukri.com/nlogin/logout', { waitUntil: 'domcontentloaded' });
+    }
+    await expect(this.profileIcon).toBeHidden({ timeout: 15000 });
   }
 }
 
