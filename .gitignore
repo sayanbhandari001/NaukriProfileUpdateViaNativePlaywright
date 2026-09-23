@@ -13,3 +13,6 @@ node_modules/
 /playwright/.auth/
 /.auth/
 /.chrome-profile/
+
+# MCP page snapshots capture logged-in pages (email, phone) — never commit
+.playwright-mcp/
