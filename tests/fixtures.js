@@ -12,6 +12,7 @@ const { BaytLogoutPage } = require('./pages/bayt/LogoutPage');
 const { FounditLoginPage } = require('./pages/foundit/LoginPage');
 const { FounditProfilePage } = require('./pages/foundit/ProfilePage');
 const { FounditLogoutPage } = require('./pages/foundit/LogoutPage');
+const FOUNDIT_GULF_BASE_URL = 'https://www.founditgulf.com';
 const { GulfTalentLoginPage } = require('./pages/gulftalent/LoginPage');
 const { GulfTalentProfilePage } = require('./pages/gulftalent/ProfilePage');
 const { GulfTalentLogoutPage } = require('./pages/gulftalent/LogoutPage');
@@ -78,6 +79,25 @@ const test = base.extend({
     const loginPage = new FounditLoginPage(page);
     const profilePage = new FounditProfilePage(page);
     const logoutPage = new FounditLogoutPage(page);
+
+    await use({
+      loginPage,
+      profilePage,
+      logoutPage,
+      login: async (email, password) => {
+        await loginPage.login(email, password);
+      },
+      logout: async () => {
+        await logoutPage.logout();
+      },
+    });
+  },
+
+  // Same foundit platform as founditApp, different regional site (Gulf/UAE).
+  founditGulfApp: async ({ page }, use) => {
+    const loginPage = new FounditLoginPage(page, FOUNDIT_GULF_BASE_URL);
+    const profilePage = new FounditProfilePage(page, FOUNDIT_GULF_BASE_URL);
+    const logoutPage = new FounditLogoutPage(page, FOUNDIT_GULF_BASE_URL);
 
     await use({
       loginPage,

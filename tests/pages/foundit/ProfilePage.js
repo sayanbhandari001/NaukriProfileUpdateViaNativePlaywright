@@ -1,15 +1,17 @@
 const { expect } = require('@playwright/test');
+const { FOUNDIT_SG_BASE_URL } = require('./LoginPage');
 
 class FounditProfilePage {
-  constructor(page) {
+  constructor(page, baseUrl = FOUNDIT_SG_BASE_URL) {
     this.page = page;
+    this.baseUrl = baseUrl;
     this.editSummaryButton = page.locator('#SUMMARY #SECTION_EDIT_BUTTON');
     this.summaryTextarea = page.locator('textarea#summary');
     this.saveButton = page.getByRole('button', { name: 'Save' }).first();
   }
 
   async gotoEditor() {
-    await this.page.goto('https://www.foundit.sg/seeker/profile', { waitUntil: 'domcontentloaded' });
+    await this.page.goto(`${this.baseUrl}/seeker/profile`, { waitUntil: 'domcontentloaded' });
     await expect(this.editSummaryButton).toBeVisible({ timeout: 30000 });
     await this.editSummaryButton.click();
     await expect(this.summaryTextarea).toBeVisible();

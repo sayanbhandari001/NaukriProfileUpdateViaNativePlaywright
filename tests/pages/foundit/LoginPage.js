@@ -1,13 +1,16 @@
+const FOUNDIT_SG_BASE_URL = 'https://www.foundit.sg';
+
 class FounditLoginPage {
-  constructor(page) {
+  constructor(page, baseUrl = FOUNDIT_SG_BASE_URL) {
     this.page = page;
+    this.baseUrl = baseUrl;
     this.emailField = page.locator('input#userName');
     this.passwordField = page.locator('input#password');
     this.loginButton = page.locator('button#loginSubmit');
   }
 
   async goto() {
-    await this.page.goto('https://www.foundit.sg/rio/login', { waitUntil: 'domcontentloaded' });
+    await this.page.goto(`${this.baseUrl}/rio/login`, { waitUntil: 'domcontentloaded' });
     await this.emailField.waitFor({ state: 'visible' });
   }
 
@@ -20,4 +23,4 @@ class FounditLoginPage {
   }
 }
 
-module.exports = { FounditLoginPage };
+module.exports = { FounditLoginPage, FOUNDIT_SG_BASE_URL };

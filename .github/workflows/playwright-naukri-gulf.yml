@@ -29,6 +29,8 @@ jobs:
       BAYT_PASSWORD: ${{ secrets.BAYT_PASSWORD }}
       FOUNDIT_EMAIL: ${{ secrets.FOUNDIT_EMAIL }}
       FOUNDIT_PASSWORD: ${{ secrets.FOUNDIT_PASSWORD }}
+      FOUNDIT_GULF_EMAIL: ${{ secrets.FOUNDIT_GULF_EMAIL }}
+      FOUNDIT_GULF_PASSWORD: ${{ secrets.FOUNDIT_GULF_PASSWORD }}
       GULFTALENT_EMAIL: ${{ secrets.GULFTALENT_EMAIL }}
       GULFTALENT_PASSWORD: ${{ secrets.GULFTALENT_PASSWORD }}
       INDEED_EMAIL: ${{ secrets.INDEED_EMAIL }}
@@ -64,9 +66,9 @@ jobs:
                       GULFTALENT_EMAIL GULFTALENT_PASSWORD; do
             if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "✗ $name is NOT set"; missing=1; fi
           done
-          # Indeed is optional — the spec skips itself when the credentials are absent
-          for name in INDEED_EMAIL INDEED_PASSWORD; do
-            if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "- $name is not set (Indeed test will be skipped)"; fi
+          # Optional credentials — those specs skip themselves when the values are absent
+          for name in INDEED_EMAIL INDEED_PASSWORD FOUNDIT_GULF_EMAIL FOUNDIT_GULF_PASSWORD; do
+            if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "- $name is not set (that test will be skipped)"; fi
           done
           exit $missing
 
