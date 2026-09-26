@@ -28,6 +28,9 @@ The cron expression is `0 5,7,10 * * 1-6`. Scheduled workflows use the default
 branch (`master`). GitHub may delay or drop scheduled jobs under high load, so
 these are target times rather than an exact-time guarantee. A manual run is also
 available in Actions under **Profile Update (GitHub-hosted, IST schedule)**.
+For public repositories, GitHub also disables schedules after 60 days without
+repository activity; normal scheduled runs should not be relied on to prevent
+this. See [GitHub's scheduling limitations](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 The workflow runs `npm ci`, validates credential availability, installs Chromium
 and Linux dependencies, then runs `xvfb-run --auto-servernum npm run test:ci`.
