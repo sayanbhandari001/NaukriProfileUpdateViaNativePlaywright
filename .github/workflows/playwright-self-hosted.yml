@@ -1,18 +1,12 @@
 name: Profile Update (self-hosted)
 
-# Runs the full suite from a self-hosted runner on a home IP. Naukri and Bayt reject
-# logins from GitHub's datacenter IPs (dropped session / Cloudflare challenge), so the
-# ubuntu-latest workflow cannot pass them no matter how the tests are written.
-#
-# Enable the schedule below once the runner is registered and shows as Idle under
-# Settings -> Actions -> Runners. Until then this is manual-dispatch only, so runs do
-# not pile up in the queue waiting for a runner that does not exist yet.
+# Optional manual fallback for a registered local runner.
+# Scheduled execution uses GitHub-hosted runners in playwright-naukri-gulf.yml.
 
 on:
+  # Manual only: the scheduled run now lives in playwright-naukri-gulf.yml, so runs no
+  # longer queue up (and get cancelled) whenever the home PC is off.
   workflow_dispatch:
-  schedule:
-    # UTC. IST = UTC+5:30 -> 10:30, 12:30, 15:30 IST, Monday-Saturday
-    - cron: '0 5,7,10 * * 1-6'
 
 concurrency:
   group: profile-update
