@@ -45,7 +45,7 @@ class NaukriLoginPage {
       if (serviceRejected) {
         throw new Error(`Naukri returned "Something went wrong. Please try again." during login; an authenticated session was not created. Login response status codes: ${loginStatuses.join(', ') || 'none observed'}.`, { cause });
       }
-      throw new Error('Naukri login did not establish an authenticated session; check the failure screenshot for a login or verification prompt.', { cause });
+      throw new Error(`Naukri login did not establish an authenticated session. Login response status codes: ${loginStatuses.join(', ') || 'none observed'}. Check the failure screenshot for a login or verification prompt.`, { cause });
     } finally {
       this.page.off('response', recordLoginStatus);
     }

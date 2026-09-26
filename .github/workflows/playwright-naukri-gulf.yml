@@ -2,6 +2,14 @@ name: Profile Update (GitHub-hosted, IST schedule)
 
 on:
   workflow_dispatch:
+    inputs:
+      suite:
+        description: 'Run every portal or diagnose one Naukri India account'
+        type: choice
+        default: all
+        options:
+          - all
+          - naukri-smoke
   schedule:
     # UTC -> 10:30 AM, 12:30 PM, 3:30 PM IST, Monday through Saturday.
     - cron: '0 5,7,10 * * 1-6'
@@ -91,7 +99,16 @@ jobs:
       # Preserve the project's headed browser behavior on a virtual display.
       # india + international cover every test exactly once (priority-* projects would re-run them).
       - name: Run tests
-        run: xvfb-run --auto-servernum npm run test:ci
+        env:
+          TEST_SUITE: ${{ inputs.suite || 'all' }}
+        run: |
+          case "$TEST_SUITE" in
+            all) xvfb-run --auto-servernum npm run test:ci ;;
+            naukri-smoke)
+              xvfb-run --auto-servernum npx playwright test tests/naukri.spec.js --project=india --grep 'account 1' --workers=1
+              ;;
+            *) echo "::error::Unknown test suite"; exit 1 ;;
+          esac
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
