@@ -1,5 +1,10 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const os = require('node:os');
+const path = require('node:path');
+const { execFile } = require('node:child_process');
+const { promisify } = require('node:util');
 const { chromium } = require('@playwright/test');
 const { NaukriLoginPage } = require('../tests/pages/naukriIndia/LoginPage');
 const { NaukriProfilePage } = require('../tests/pages/naukriIndia/ProfilePage');
@@ -70,4 +75,43 @@ test('ordinary missing selectors are not mislabeled as access blocks', async () 
       return true;
     });
   });
+});
+
+test('failed-test diagnostics do not contain a filled password', async () => {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'portal-privacy-'));
+  const canary = 'PASSWORD_CANARY_' + Date.now();
+  try {
+    const config = path.join(directory, 'playwright.config.cjs');
+    await fs.writeFile(config, `const base = require(${JSON.stringify(path.resolve(__dirname, '../playwright.config.js'))});
+module.exports = {...base, testDir: __dirname, projects: [{name:'privacy'}], workers:1, retries:0,
+  use: {...base.use, headless:true, screenshot:'off', video:'off'},
+  outputDir: ${JSON.stringify(path.join(directory, 'results'))}, reporter:'json'};`);
+    await fs.writeFile(path.join(directory, 'privacy.spec.cjs'), `const {test} = require(${JSON.stringify(require.resolve('@playwright/test'))});
+test('intentional privacy failure', async ({page}) => {
+  await page.setContent('<input type="password">');
+  await page.locator('input').fill(process.env.PORTAL_PASSWORD_CANARY);
+  throw new Error('Intentional privacy fixture failure');
+});`);
+    let result;
+    try {
+      await promisify(execFile)(process.execPath, [require.resolve('@playwright/test/cli'), 'test', '--config', config], {
+        env: {...process.env, PORTAL_PASSWORD_CANARY: canary}, timeout: 30000,
+      });
+      assert.fail('The privacy fixture must fail so failure diagnostics are exercised.');
+    } catch (error) {
+      assert.equal(error.code, 1);
+      result = error.stdout;
+    }
+    assert.ok(result.includes('Intentional privacy fixture failure'));
+    assert.ok(!result.includes(canary), 'JSON report exposed the password canary');
+    for (const entry of await fs.readdir(path.join(directory, 'results'), { recursive: true })) {
+      if (!entry.endsWith('.md') && !entry.endsWith('.json')) continue;
+      const content = await fs.readFile(path.join(directory, 'results', entry), 'utf8');
+      assert.ok(!content.includes(canary), 'Failure artifact exposed the password canary');
+    }
+  } finally {
+    assert.equal(path.dirname(path.resolve(directory)), path.resolve(os.tmpdir()));
+    assert.ok(path.basename(directory).startsWith('portal-privacy-'));
+    await fs.rm(directory, { recursive:true, force:true });
+  }
 });

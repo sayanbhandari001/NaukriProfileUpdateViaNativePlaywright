@@ -52,6 +52,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Mask decoded login passwords
+        run: node scripts/mask-ci-secrets.js
+
       - name: Check secrets are available
         run: |
           missing=0

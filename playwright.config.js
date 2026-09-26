@@ -1,6 +1,10 @@
 require('dotenv').config();
 const { defineConfig } = require('@playwright/test');
 
+// Playwright's AI error context can include filled password values in DOM snapshots.
+// Keep screenshot diagnostics, but never attach these snapshots to public CI reports.
+process.env.PLAYWRIGHT_NO_COPY_PROMPT = '1';
+
 module.exports = defineConfig({
   testDir: './tests',
   timeout: 60000,
@@ -19,7 +23,10 @@ module.exports = defineConfig({
     // Indian time and locale; no Indian IP or geographic location is required.
     locale: 'en-IN',
     timezoneId: 'Asia/Kolkata',
-    // Use the installed browser's real version/platform and default launch behavior.
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    launchOptions: {
+      args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']
+    },
     screenshot: 'only-on-failure',
     video: 'retry-with-video'
   },
