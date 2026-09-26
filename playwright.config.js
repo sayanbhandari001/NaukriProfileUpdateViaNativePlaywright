@@ -16,6 +16,9 @@ module.exports = defineConfig({
     ignoreHTTPSErrors: true,
     // Rely on Playwright's default action/navigation timeouts for robustness
     viewport: { width: 1366, height: 786 },
+    // Indian time and locale; no Indian IP or geographic location is required.
+    locale: 'en-IN',
+    timezoneId: 'Asia/Kolkata',
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     launchOptions: {
       args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']

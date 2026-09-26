@@ -12,9 +12,55 @@ This repository contains an automation project that updates a Naukri.com profile
 - Form validation and post-update verification
 - Configurable selectors and timeouts for robustness
 
+## Automated cloud schedule
+
+`.github/workflows/playwright-naukri-gulf.yml` runs on GitHub-hosted Ubuntu 24.04.
+Your local computer can remain off; no VM, proxy, VPN, or Indian IP is required by
+the workflow. Browser and process timezone are set to `Asia/Kolkata`.
+
+| Days | India time (IST) | Workflow time (UTC) |
+| --- | --- | --- |
+| Monday-Saturday | 10:30 AM | 05:00 |
+| Monday-Saturday | 12:30 PM | 07:00 |
+| Monday-Saturday | 3:30 PM | 10:00 |
+
+The cron expression is `0 5,7,10 * * 1-6`. Scheduled workflows use the default
+branch (`master`). GitHub may delay or drop scheduled jobs under high load, so
+these are target times rather than an exact-time guarantee. A manual run is also
+available in Actions under **Profile Update (GitHub-hosted, IST schedule)**.
+
+The workflow runs `npm ci`, validates credential availability, installs Chromium
+and Linux dependencies, then runs `xvfb-run --auto-servernum npm run test:ci`.
+The two regional projects cover each test once, with two workers and one retry.
+All profile workflows share a concurrency group to prevent overlapping updates.
+The self-hosted workflow remains a manual fallback with no schedule.
+
+Configure these repository Actions secrets (passwords are **base64-encoded** to
+match the existing test helpers; base64 is not encryption):
+
+- `NAUKRI_USER_1_EMAIL` / `NAUKRI_USER_1_PASSWORD`
+- `NAUKRI_USER_2_EMAIL` / `NAUKRI_USER_2_PASSWORD`
+- `NAUKRI_USER_3_EMAIL` / `NAUKRI_USER_3_PASSWORD`
+- `GULF_NAUKRI_EMAIL` / `GULF_NAUKRI_PASSWORD`
+- `BAYT_EMAIL` / `BAYT_PASSWORD`
+- `FOUNDIT_EMAIL` / `FOUNDIT_PASSWORD`
+- `GULFTALENT_EMAIL` / `GULFTALENT_PASSWORD`
+
+Indeed and Foundit Gulf remain optional: set both `INDEED_EMAIL` and
+`INDEED_PASSWORD`, or both `FOUNDIT_GULF_EMAIL` and `FOUNDIT_GULF_PASSWORD`, to
+enable them. The wife account remains disabled. Missing required credentials or
+incomplete optional pairs fail the workflow instead of hiding a configuration
+error. Portal failures also fail the run; CAPTCHA, login challenges, and session
+rejection may still prevent unattended success on cloud runners.
+
+Reports and failure artifacts are retained for seven days and can contain profile
+information. Review repository access before enabling additional accounts.
+To roll back hosting, remove this workflow's schedule and restore the same cron
+under the self-hosted workflow once a local runner is available.
+
 ## Prerequisites
 
-- Node.js (16+ recommended) or the runtime used by Playwright
+- Node.js 22 (used by CI)
 - npm or yarn
 - Playwright (installed as a dependency)
 - A valid Naukri account for testing
@@ -41,9 +87,7 @@ This repository contains an automation project that updates a Naukri.com profile
 
 - Create a .env or config file (not checked into source control) with credentials and options:
 
-  - NAUKRI_EMAIL
-  - NAUKRI_PASSWORD
-  - PROFILE_DATA_PATH (optional JSON with profile fields)
+  - Use the credential variable names listed under Automated cloud schedule.
 
 - Adjust timeouts and selectors in the config file if the site structure changes.
 

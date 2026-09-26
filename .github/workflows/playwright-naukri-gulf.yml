@@ -1,10 +1,13 @@
-name: Naukri & Gulf Profile Update
+name: Profile Update (GitHub-hosted, IST schedule)
 
 on:
-  # No schedule here: Naukri and Bayt reject GitHub's datacenter IPs, so this workflow
-  # can never be fully green. The scheduled run lives in playwright-self-hosted.yml.
-  # Kept for manual dispatch when you want a hosted-runner sanity check.
   workflow_dispatch:
+  schedule:
+    # UTC -> 10:30 AM, 12:30 PM, 3:30 PM IST, Monday through Saturday.
+    - cron: '0 5,7,10 * * 1-6'
+
+permissions:
+  contents: read
 
 concurrency:
   group: profile-update
@@ -14,9 +17,10 @@ jobs:
   playwright-tests:
     name: Run Playwright Tests
     timeout-minutes: 30
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
+      TZ: Asia/Kolkata
       GULF_NAUKRI_EMAIL: ${{ secrets.GULF_NAUKRI_EMAIL }}
       GULF_NAUKRI_PASSWORD: ${{ secrets.GULF_NAUKRI_PASSWORD }}
       NAUKRI_USER_1_EMAIL: ${{ secrets.NAUKRI_USER_1_EMAIL }}
@@ -38,21 +42,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
           node-version: '22.x'
           cache: npm
 
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
-
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
-      - run: sudo apt-get install -y xvfb
 
       - name: Check secrets are available
         run: |
@@ -70,12 +68,25 @@ jobs:
           for name in INDEED_EMAIL INDEED_PASSWORD FOUNDIT_GULF_EMAIL FOUNDIT_GULF_PASSWORD; do
             if [ -n "${!name}" ]; then echo "✓ $name is set"; else echo "- $name is not set (that test will be skipped)"; fi
           done
+          # An optional portal must have both credentials or neither.
+          for prefix in INDEED FOUNDIT_GULF; do
+            email_key="${prefix}_EMAIL"
+            password_key="${prefix}_PASSWORD"
+            if { [ -n "${!email_key}" ] && [ -z "${!password_key}" ]; } ||
+               { [ -z "${!email_key}" ] && [ -n "${!password_key}" ]; }; then
+              echo "::error::Set both ${email_key} and ${password_key}, or leave both unset."
+              missing=1
+            fi
+          done
           exit $missing
 
-      # Headed under a virtual display — the portals block headless Chromium.
+      - run: npx playwright install --with-deps chromium
+      - run: sudo apt-get install -y xvfb
+
+      # Preserve the project's headed browser behavior on a virtual display.
       # india + international cover every test exactly once (priority-* projects would re-run them).
       - name: Run tests
-        run: xvfb-run --auto-servernum npx playwright test --project=india --project=international
+        run: xvfb-run --auto-servernum npm run test:ci
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
@@ -83,7 +94,7 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
-          retention-days: 30
+          retention-days: 7
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
@@ -91,4 +102,4 @@ jobs:
         with:
           name: test-results
           path: test-results/
-          retention-days: 30
+          retention-days: 7
