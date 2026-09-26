@@ -11,18 +11,15 @@ class NaukriProfilePage {
 
   async goto() {
     const profileUrl = 'https://www.naukri.com/mnjuser/profile?id=&altresid';
-    await this.page.goto(profileUrl, { waitUntil: 'load' });
-    // A dropped session silently renders a login form instead of the profile — the form's
-    // ids differ between login.naukri.com and www.naukri.com, so match on the placeholder.
-    const loginForm = this.page.getByPlaceholder(/Enter Email ID/i);
-    if (await loginForm.first().isVisible().catch(() => false)) {
-      await this.page.waitForTimeout(5000);
-      await this.page.goto(profileUrl, { waitUntil: 'load' });
-      if (await loginForm.first().isVisible().catch(() => false)) {
-        throw new Error(`Naukri dropped the session: ${profileUrl} served the login form instead of the profile.`);
-      }
+    await this.page.goto(profileUrl, { waitUntil: 'domcontentloaded' });
+    const loginForm = this.page.getByPlaceholder(/Enter Email ID/i).first();
+    const headline = this.page.getByText('Resume headline', { exact: true }).first();
+    // isVisible() alone returns immediately and misses a late-rendered login form.
+    await expect(headline.or(loginForm).first()).toBeVisible({ timeout: 20000 });
+    if (await loginForm.isVisible()) {
+      throw new Error('Naukri session was not accepted: the profile page returned the login form.');
     }
-    await this.page.getByText('Resume headline').first().waitFor({ state: 'visible' });
+    await expect(headline).toBeVisible();
   }
 
   async openHeadlineEditor() {

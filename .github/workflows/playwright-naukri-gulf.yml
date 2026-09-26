@@ -82,6 +82,8 @@ jobs:
 
       - run: npx playwright install --with-deps chromium
       - run: sudo apt-get install -y xvfb
+      - name: Check portal readiness regressions
+        run: npm run test:regression
 
       # Preserve the project's headed browser behavior on a virtual display.
       # india + international cover every test exactly once (priority-* projects would re-run them).
