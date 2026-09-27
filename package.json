@@ -5,6 +5,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test:ci": "playwright test --project=india --project=international --workers=2",
+    "test:regression": "node --test scripts/portal-regressions.test.js",
     "test:headed": "npx playwright test --headed",
     "test:report": "npx playwright show-report",
     "install:drivers": "npx playwright install"

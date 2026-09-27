@@ -1,3 +1,5 @@
+const { waitForPortalReady } = require('../portalAccess');
+
 class GulfTalentLoginPage {
   constructor(page) {
     this.page = page;
@@ -10,6 +12,7 @@ class GulfTalentLoginPage {
 
   async goto() {
     await this.page.goto('https://www.gulftalent.com/', { waitUntil: 'domcontentloaded' });
+    await waitForPortalReady(this.page, this.headerLoginLink, 'GulfTalent');
     await this.headerLoginLink.click();
     await this.emailField.waitFor({ state: 'visible' });
   }

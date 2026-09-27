@@ -1,3 +1,5 @@
+const { waitForPortalReady } = require('../portalAccess');
+
 class BaytLoginPage {
   constructor(page) {
     this.page = page;
@@ -8,7 +10,7 @@ class BaytLoginPage {
 
   async goto() {
     await this.page.goto('https://www.bayt.com/en/login/', { waitUntil: 'domcontentloaded' });
-    await this.emailField.waitFor({ state: 'visible' });
+    await waitForPortalReady(this.page, this.emailField, 'Bayt');
   }
 
   async login(email, password) {

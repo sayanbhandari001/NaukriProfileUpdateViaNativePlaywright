@@ -147,6 +147,18 @@ display via `xvfb-run`.
 
 - If selectors fail, re-open the site in a browser and update selectors.
 - For authentication issues, verify credentials and any CAPTCHA / 2FA on the account.
+- Naukri uses `www.naukri.com/nlogin/login` and checks for both authenticated
+  navigation and the profile UI. Login forms rendered after navigation are treated
+  as session failures. Service-error diagnostics include HTTP status codes only.
+- Bayt and GulfTalent allow transient verification pages to finish, then report
+  persistent human-verification or access-denied pages as failures. These are not
+  skipped tests and no CAPTCHA solving is attempted.
+- Run `npm run test:regression` for isolated browser checks of delayed page
+  rendering, authentication readiness, challenge reporting, and password privacy.
+  These use local fixtures and do not update any real profile.
+- Failure DOM snapshots are disabled because they can include filled passwords.
+  CI also masks decoded password values. Screenshots can still contain profile
+  information; treat downloaded reports as sensitive.
 
 ## Contributing
 
